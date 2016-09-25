@@ -89,8 +89,16 @@
 							else {
 								var coef = Math.pow(10, accuracy),
 									tanAlfa = ((sumIII/sumI) - Math.cos(120 * Math.PI/180))/Math.sin(120 * Math.PI/180),
-									alfa = Math.atan(tanAlfa);
-								return Math.round((alfa*180/Math.PI)*coef)/coef;
+									alfa = Math.round((Math.atan(tanAlfa)*180/Math.PI)*coef)/coef;
+									if (sumI < 0) {
+										if (alfa < 0) {
+											alfa = alfa + 180;
+										}
+										else {
+											alfa = alfa - 180;
+										}
+									}
+								return alfa;
 							}
 						}
 					}
