@@ -22,5 +22,5 @@ import '@angular/platform-browser-dynamic';
 
 // libraries
 
-//
+// global typescript helpers
 import 'ts-helpers';

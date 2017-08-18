@@ -1,0 +1,72 @@
+<h2>Настройки</h2>
+<form id="count-form"
+      [formGroup]="settingsForm"
+      (ngSubmit)="onSubmit(settingsForm.value)"
+      class="count-form">
+    <label class="form-label">Точность - количество знаков после запятой.<br>
+        <btn-plus [input]="accuracy"></btn-plus>
+        <input name="accuracy"
+               class=""
+               type="number"
+               [formControl]="accuracy">
+        <btn-minus [input]="accuracy"></btn-minus><br>
+        <output id="accuracyValue"
+                class="">
+            Точность -
+            {{ this.axisCalculatorModel.accuracy }}
+        </output>
+    </label>
+    <label *ngIf="useSums" class="form-label">Максимальная алгебраическая сумма зубцов.<br>
+        <btn-plus [input]="maxSum"></btn-plus>
+        <input name="maxSum" 
+               class=""
+               type="number"
+               [formControl]="maxSum">
+        <btn-minus [input]="maxSum"></btn-minus><br>
+        <output id="maxSumValue"
+                class="">
+            Максимальная сумма -
+            {{ this.axisCalculatorModel.maxSum.max }}
+        </output>
+    </label>
+    <label *ngIf="!useSums" class="form-label">Максимальная амплитуда зубцов.<br>
+        <btn-plus [input]="maxWave"></btn-plus>
+        <input name="maxWave" 
+               class=""
+               type="number"
+               [formControl]="maxWave">
+        <btn-minus [input]="maxWave"></btn-minus><br>
+        <output id="maxSumValue"
+                class="">
+            Максимальная амплитуда -
+            {{ this.axisCalculatorModel.maxWave.max }}
+        </output>
+    </label>
+    <label class="form-label">
+        <input (change)="changeInputs()"
+               name="use-sums"
+               class=""
+               type="checkbox"
+               [checked]="!useSums">
+        Использовать амплитуды отдельных зубцов
+    </label>
+    <p>
+        <span class="use-sums-state"
+              *ngIf="useSums">
+          Расчитывать используя суммы амплитуд QRS
+        </span>
+        <span class="use-sums-state"
+              *ngIf="!useSums">
+          Расчитывать используя амплитуды зубцов QRS
+        </span>
+    </p>
+    <button id="to-count" type="submit">Сохранить</button>
+    <button type="reset" (click)="reset($event)">Сбросить</button>
+    <label class="form-label">
+        <output *ngIf="message" 
+                id="message"
+                class="">
+            {{ this.message }}
+        </output>
+    </label>
+</form>

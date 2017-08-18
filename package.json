@@ -1,5 +1,5 @@
 {
-  "name": "ng-complex-redux",
+  "name": "ng-ecg",
   "version": "1.0.0",
   "description": "angular testing bootstrap",
   "main": "app.js",
@@ -17,11 +17,12 @@
   "author": "qwerty",
   "license": "ISC",
   "devDependencies": {
-    "@angular/forms": "^4.2.6",
-    "@angular/router": "^4.2.6",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.2.2",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.2",
+    "html-loader": "^0.5.0",
     "html-webpack-plugin": "^2.28.0",
     "image-webpack-loader": "^3.3.1",
     "jasmine": "^2.6.0",
@@ -41,7 +42,6 @@
     "sass-loader": "^6.0.5",
     "style-loader": "^0.17.0",
     "ts-helpers": "^1.1.2",
-    "ts-loader": "^2.0.3",
     "typescript": "^2.4.1",
     "typings": "^2.1.1",
     "url-loader": "^0.5.9",
@@ -49,6 +49,8 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "@angular/forms": "^4.2.6",
+    "@angular/router": "^4.2.6",
     "@angular/common": "^4.1.2",
     "@angular/compiler": "^4.1.2",
     "@angular/core": "^4.1.2",
@@ -57,5 +59,13 @@
     "core-js": "^2.4.1",
     "rxjs": "^6.0.0-alpha.0",
     "zone.js": "^0.8.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauserkurz/heart-axis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauserkurz/heart-axis/issues"
+  },
+  "homepage": "https://github.com/mauserkurz/heart-axis#readme"
 }

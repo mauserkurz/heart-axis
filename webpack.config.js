@@ -22,6 +22,10 @@
 
 
 
+// Errors
+
+// Еслт установлен zone.js 0.8.13, это вызовет ошибку, чтобы устранить ее необходимо откатить до 0.8.12 версии
+
 // -- Импорт плагинов webpack
 // импорт самого webpack
 const webpack = require('webpack');
@@ -45,9 +49,9 @@ let config = {
       // путь до html файлов
       html: './src/index.html',
       // путь до typescript файлов
-      entry: './src/ts/app.ts',
+      entry: './src/app/app.ts',
       // файл typescript, в котором будут собраны статические зависимые модули
-      vendor: ['./src/ts/vendor.ts'],
+      vendor: ['./src/app/vendor.ts'],
     },
   },
 };
@@ -74,6 +78,30 @@ module.exports = {
     // очередь обработчиков файлов
     rules: [
       {
+        // regexp для шаблонов компонентов
+        test: /\.html$/,
+        // обратная очередь обработчиков файлов
+        use: [
+          {
+            // загрузчик html шаблонов
+            loader: 'html-loader',
+            // опции загрузчика
+            options: {
+              // включить минификацию
+              minimize: true,
+              // удалить кавычки у атрибутов тегов
+              removeAttributeQuotes: false,
+              // чувствительность к регистру
+              caseSensitive: true,
+              // обернуть кастомные атрибуты
+              customAttrSurround: [ [/#/, /(?:)/], [/\*/, /(?:)/], [/\[?\(?/, /(?:)/] ],
+              // назначить кастомные атрибуты
+              customAttrAssign: [ /\)?\]?=/ ] 
+            }
+          }
+        ]
+      },
+      {
         // regexp для файлов стилей
         test: /\.(scss|css)$/,
         // обратная очередь обработчиков файлов
@@ -92,8 +120,22 @@ module.exports = {
       {
         // regexp для typescript файлов
         test: /\.ts$/,
-        // обратная очередь обработчиков файлов
-        use: ['ts-loader'],
+        // обратная очередь обработчиков файлов ts-loader
+        use: [
+          {
+            // awesome-typescript-loader - ускоренный вариант компилятора typescript 
+            loader: 'awesome-typescript-loader',
+            // опции лоадера
+            options: {
+              // испльзовать кэш
+              useCache: true,
+              // путь для хранения кэша
+              cacheDirectory: '.awcache'
+            }
+          },
+          // angular2-template-loader - лоадер загружат модулями файлы шаблонов и стилей из templateUrl, styleUrls компонентов
+          'angular2-template-loader'
+        ],
       },
       {
         // regexp для файлов растрового изображения
@@ -144,6 +186,7 @@ module.exports = {
           {
             // url-loader работает как file-loader, но может вернуть DataURL если файл меньше бит лимита
             loader: 'url-loader',
+            // опции лоадера
             options: {
               // бит лимита до которого файлы загружаются как DataURL
               limit: 10000,
@@ -193,7 +236,7 @@ module.exports = {
     // настройка компиляции html
     new HtmlWebpackPlugin({
       // контент тега title
-      title: 'Расчет ЭОС',
+      // title: 'Расчет ЭОС',
       // минификация html
       minify: {
         // удаление пробелов
