@@ -9,28 +9,40 @@ describe ('AppState', () => {
     state = new AppState;
   }));
 
-  it ('after creation service return default state', () => {
-    expect (state.useSumsCurrent ()).toEqual ({ useSums: true });
+  it ('after creation service return default useSums', () => {
+    expect (state.getValue ('useSums')).toEqual ({ use: true });
+  });
+
+  it ('after creation service return default usePercentage', () => {
+    expect (state.getValue ('usePercentage')).toEqual ({ use: true });
   });
 
   it ('return inverted state after toggle', () => {
-    expect (state.toggleSums ().useSumsCurrent ()).toEqual ({ useSums: false });
+    expect (state.toggle ('useSums').getValue ('useSums')).toEqual ({ use: false });
   });
 
   it ('return false state after toggle with false argument', () => {
-    expect (state.toggleSums (false).useSumsCurrent ()).toEqual ({ useSums: false });
+    expect (state.toggle ('useSums', false).getValue ('useSums')).toEqual ({ use: false });
   });
 
   it ('return true state after toggle with true argument', () => {
-    expect (state.toggleSums (true).useSumsCurrent ()).toEqual ({ useSums: true });
+    expect (state.toggle ('useSums', true).getValue ('useSums')).toEqual ({ use: true });
   });
 
   it ('return observable stream which returns state object on toggle', () => {
-    let stream: Observable<isUsed> = state.useSumsStream ();
-    let recivedValue;
+    let stream: Observable<isUsed> = state.getStream ('useSums');
+    let receivedValue: isUsed;
 
-    stream.subscribe (value => recivedValue = value);
-    state.toggleSums (false);
-    expect (recivedValue).toEqual ({ useSums: false });
+    stream.subscribe (value => receivedValue = value);
+    state.toggle ('useSums', false);
+    expect (receivedValue).toEqual ({ use: false });
+  });
+
+  it ('return observable stream which returns data', () => {
+    let stream: Observable<object> = state.getDataStream ('calcWrapperData');
+    let receivedValue: object;
+
+    stream.subscribe (value => receivedValue = value);
+    expect (receivedValue).toBeDefined();
   });
 });

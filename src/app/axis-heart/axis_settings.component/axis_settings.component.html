@@ -1,0 +1,72 @@
+<h2>Настройки</h2>
+<form id="count-form"
+      [formGroup]="settingsForm"
+      (ngSubmit)="onSubmit(settingsForm.value)"
+      class="count-form">
+    <settings-field
+      [input]="accuracy"
+      [step]="1"
+      [value]="axisCalculatorModel.accuracy"
+      [maximum]="axisCalculatorModel.settings.accuracy.max"
+      [minimum]="axisCalculatorModel.settings.accuracy.min"
+      [data]="{
+        'name': 'accuracy',
+        'title': 'Точность - количество знаков после запятой.',
+        'output': 'Точность - '
+      }">
+    </settings-field>
+    <settings-field
+      *ngIf="useSums"
+      [input]="maxSum"
+      [step]="1"
+      [value]="axisCalculatorModel.maxSum.max"
+      [maximum]="axisCalculatorModel.settings.maxSum.max"
+      [minimum]="axisCalculatorModel.settings.maxSum.min"
+      [data]="{
+        'name': 'maxSum',
+        'title': 'Максимальная алгебраическая сумма зубцов.',
+        'output': 'Максимальная сумма - '
+      }">
+    </settings-field>
+    <settings-field
+      *ngIf="!useSums"
+      [input]="maxWave"
+      [step]="1"
+      [value]="axisCalculatorModel.maxWave.max"
+      [maximum]="axisCalculatorModel.settings.maxWave.max"
+      [minimum]="axisCalculatorModel.settings.maxWave.min"
+      [data]="{
+        'name': 'maxWave',
+        'title': 'Максимальная амплитуда зубцов.',
+        'output': 'Максимальная амплитуда - '
+      }">
+    </settings-field>
+    <label class="form-label">
+        <input
+            name="use-sums"
+            class=""
+            type="checkbox"
+            [formControl]="useSumsField">
+        Использовать амплитуды отдельных зубцов
+    </label>
+    <p>
+        <span class="use-sums-state"
+              *ngIf="useSums">
+          Расчитывать используя суммы амплитуд QRS
+        </span>
+        <span class="use-sums-state"
+              *ngIf="!useSums">
+          Расчитывать используя амплитуды зубцов QRS
+        </span>
+    </p>
+    <button id="to-count" type="submit">Сохранить</button>
+    <span class="form-alert" *ngIf="formChanged">не сохранено</span>
+    <button type="reset" (click)="reset($event)">Сбросить</button>
+    <label class="form-label">
+        <output *ngIf="message" 
+                id="message"
+                class="">
+            {{ this.message }}
+        </output>
+    </label>
+</form>

@@ -1,0 +1,33 @@
+<h1>Расчет пропорции интервалов PP</h1>
+<form
+    action=""
+    class=""
+    [formGroup]="arrhythmiaForm"
+    >
+    <sum-field
+      [input]="pp1"
+      [step]="10"
+      [maximum]="arrhythmiaModel.settings.interval.max"
+      [minimum]="arrhythmiaModel.settings.interval.min"
+      [data]="{'name':'pp1', 'title':'P<sub>0</sub>P<sub>1</sub> интервал'}">
+    </sum-field>
+    <sum-field
+      [input]="pp2"
+      [step]="10"
+      [maximum]="arrhythmiaModel.settings.interval.max"
+      [minimum]="arrhythmiaModel.settings.interval.min"
+      [data]="{'name':'pp2', 'title':'P<sub>1</sub>P<sub>2</sub> интервал'}">
+    </sum-field>
+    <label *ngIf="useSeconds">Разница в миллисекундах<br>
+        <output class="">
+            {{ this.output }}
+        </output>
+    </label><br>
+    <label *ngIf="!useSeconds">Разница в процентах<br>
+        <output class="form-output">
+            {{ this.output }}
+        </output>
+    </label><br>
+    <span class="form-alert" *ngIf="isArrhythmia">Аритмия - по данным значениям интервалов PP</span>
+    <button type="reset" (click)="reset($event)">Сбросить</button>
+</form>

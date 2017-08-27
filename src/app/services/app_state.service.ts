@@ -8,31 +8,47 @@ export interface isUsed {
 @Injectable ()
 export class AppState {
   private useSums: BehaviorSubject <isUsed> = new BehaviorSubject <isUsed>(null);
+  private usePercentage: BehaviorSubject <isUsed> = new BehaviorSubject <isUsed>(null);
+  private calcWrapperData: BehaviorSubject <object> = new BehaviorSubject <object>(null);
+  private faqData: BehaviorSubject <object> = new BehaviorSubject <object>(null);
 
   constructor () {
-    this.useSums.next ({ useSums: true });
+    this.usePercentage.next ({ use: true });
+    this.useSums.next ({ use: true });
+    this.calcWrapperData.next ({
+      'heart-axis': { title: 'Расчет электрической оси сердца.' },
+      'is-arrhythmia': { title: 'Расчет соотношения интервалов PP' }
+    });
+    this.faqData.next ({
+      'heart-axis': { data: 'heart-axis FAQ' },
+      'is-arrhythmia': { data: 'is-arrhythmia FAQ' }
+    });
   }
 
-  toggleSums (direction?: boolean): AppState {
+  toggle (data: string, direction?: boolean): AppState {
     let value: isUsed;
     if (typeof direction !== 'undefined') {
       value = {
-        useSums: direction,
+        use: direction,
       };
     } else {
       value = {
-        useSums: !this.useSumsCurrent ().useSums,
+        use: !this.getValue (data).use,
       };
     }
-    this.useSums.next (value);
+    this[data].next (value);
     return this;
   }
 
-  useSumsCurrent (): isUsed {
-    return this.useSums.getValue ();
+  getValue (data: string): isUsed {
+    return this[data].getValue ();
   }
 
-  useSumsStream (): Observable<isUsed> {
-    return this.useSums.asObservable ();
+  getStream (data: string): Observable<isUsed> {
+    return this[data].asObservable ();
+  }
+
+  getDataStream (data: string): Observable<object> {
+    return this[data].asObservable ();
   }
 }

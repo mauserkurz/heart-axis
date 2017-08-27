@@ -1,10 +1,16 @@
 import { Location } from '@angular/common';
+import { Component } from "@angular/core";
 import { Router } from '@angular/router';
 import { TestBed, async, ComponentFixture, inject } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 // components
 import { AppComponent } from './app.component';
-import { FaqComponent } from "./faq.component/faq.component";
+
+@Component ({
+  selector: 'faq',
+  template: ''
+})
+class FaqComponentMock {}
 
 describe ('AppComponent', () => {
   let component: AppComponent;
@@ -16,12 +22,12 @@ describe ('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule.withRoutes([
-          { path: 'faq', component: FaqComponent }
+          { path: 'faq', component: FaqComponentMock }
         ]),
       ],
       declarations: [
         AppComponent,
-        FaqComponent
+        FaqComponentMock
       ]
     })
     .compileComponents();

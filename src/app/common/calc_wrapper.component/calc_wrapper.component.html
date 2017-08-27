@@ -1,0 +1,9 @@
+<h2>{{ title }}</h2>
+<nav>
+    <ul>
+        <li><a [routerLink]="['calculator']" routerLinkActive="active">Калькулятор</a></li>
+        <li><a [routerLink]="['settings']" routerLinkActive="active">Настройки расчетов</a></li>
+        <li><a [routerLink]="['faq']" routerLinkActive="active">FAQ</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>

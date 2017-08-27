@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 // плагин - извлекает импортированный css в отдельный файл
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const configFiles = {
   paths: {
     // папка для development
@@ -13,13 +12,14 @@ const configFiles = {
       // путь до html файлов
       html: './src/index.html',
       // путь до typescript файлов
-      ts: './src/app.ts',
+      ts: './src/app.module.ts',
     },
   },
 };
 
 module.exports = function (config) {
   config.set({
+    autoWatchBatchDelay: 1000,
     browsers: ['Chrome'/*, 'Firefox', 'IE', 'Opera'*/],
     singleRun: false,
     concurrency: Infinity,
@@ -69,18 +69,14 @@ module.exports = function (config) {
           {
             // regexp для файлов стилей
             test: /\.(scss|css)$/,
+            // исключить из обработки
+            exclude: /node_modules/,
             // обратная очередь обработчиков файлов
-            use: ExtractTextPlugin.extract({
-              // style-loader - загружает стили сразу в DOM
-              //fallback: 'style-loader',
-              // css-loader - загружает стили в js файл парсит @import и url() как import/require() и позволяет их
-              // использовать
-              // raw-loader - загружает стили в виде строки
-              // sass-loader - плагин использует node-sass для компиляции css из scss и/или sass
-              use: ['raw-loader', 'sass-loader'],//css-loader
-              // путь выгрузки сгенерированных файлов
-              // publicPath: config.paths.dev,
-            }),
+            // raw-loader - загружает стили в виде строки
+            // sass-loader - плагин использует node-sass для компиляции css из scss и/или sass
+            use: ['raw-loader', 'sass-loader'],
+            // путь выгрузки сгенерированных файлов
+            // publicPath: config.paths.dev,
           },
           {
             test: /\.ts$/,
@@ -96,15 +92,6 @@ module.exports = function (config) {
         reasons: true,
       },
       plugins: [
-        // настройка извлечения css файлов
-        new ExtractTextPlugin({
-          // название бандла
-          filename: 'app.css',
-          // включен ли плагин
-          disable: false,
-          // извлечение из всех чанков, по умолчанию только из первых - когда false
-          allChunks: true,
-        }),
         new webpack.ContextReplacementPlugin(
           // regexp - фильтр который находит модули
           /angular(\\|\/)core(\\|\/)@angular/,

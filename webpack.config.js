@@ -10,7 +10,6 @@
 // 1) let config - настройка путей
 // 2) output.filename - filename название js бандла
 // 3) HtmlWebpackPlugin - title содержание тега title
-// 4) ExtractTextPlugin - filename название css бандла
 
 // npm run serve - компиляция с последующим запуском сервера по адресу http://localhost:8080/
 
@@ -31,8 +30,6 @@
 const webpack = require('webpack');
 // плагин - компилятор html, особенно полезен для добавления хэшей к бандлам
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// плагин - извлекает импортированный css в отдельный файл
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // нативный модуль - работа с путями
 const path = require('path');
 // включен ли webpack с ключем -p (проверка на production версию сборки)
@@ -48,10 +45,17 @@ let config = {
       root: './src',
       // путь до html файлов
       html: './src/index.html',
-      // путь до typescript файлов
-      entry: './src/app/app.ts',
-      // файл typescript, в котором будут собраны статические зависимые модули
-      vendor: ['./src/app/vendor.ts'],
+      // список точек вхождения - файлы на которое забито приложение
+      entry: {
+        // точка вхождения - файл typescript из source, который будет основным в бандле
+        app: './src/app/app.module.ts',
+        // точка вхождения - расчетов ЭОС
+        axis: './src/app/axis-heart',
+        // точка вхождения - расчетов PP
+        arrhythmia: './src/app/is-arrhythmia',
+        // файл typescript, в котором будут собраны статические зависимые модули
+        vendor: ['./src/app/vendor.ts'],
+      },
     },
   },
 };
@@ -59,12 +63,7 @@ let config = {
 // модуль конфигурация
 module.exports = {
   // настройка генерируемых файлов
-  entry: {
-    // файл typescript, в котором будут собраны статические зависимые модули
-    vendor: config.paths.src.vendor,
-    // точка вхождения - файл typescript из source, который будет основным в бандле
-    app: config.paths.src.entry,
-  },
+  entry: config.paths.src.entry,
   // настройка сгенерированных бандлов
   output: {
     // место выгрузки
@@ -104,18 +103,13 @@ module.exports = {
       {
         // regexp для файлов стилей
         test: /\.(scss|css)$/,
-        // обратная очередь обработчиков файлов
-        use: ExtractTextPlugin.extract({
-          // style-loader - загружает стили сразу в DOM
-          //fallback: 'style-loader',
-          // css-loader - загружает стили в js файл парсит @import и url() как import/require() и позволяет их
-          // использовать
-          // raw-loader - загружает стили в виде строки
-          // sass-loader - плагин использует node-sass для компиляции css из scss и/или sass
-          use: ['raw-loader', 'sass-loader'],//css-loader
-          // путь выгрузки сгенерированных файлов
-          // publicPath: config.paths.dev,
-        }),
+        // исключить из обработки
+        exclude: /node_modules/,
+        // raw-loader - загружает стили в виде строки
+        // sass-loader - плагин использует node-sass для компиляции css из scss и/или sass
+        use: ['raw-loader', 'sass-loader'],//css-loader
+        // путь выгрузки сгенерированных файлов
+        // publicPath: config.paths.dev,
       },
       {
         // regexp для typescript файлов
@@ -133,6 +127,8 @@ module.exports = {
               cacheDirectory: '.awcache'
             }
           },
+          // angular-router-loader - загрузчик для парсинга loadChildren поля в роутах
+          'angular-router-loader',
           // angular2-template-loader - лоадер загружат модулями файлы шаблонов и стилей из templateUrl, styleUrls компонентов
           'angular2-template-loader'
         ],
@@ -248,15 +244,6 @@ module.exports = {
       template: config.paths.src.html,
       // chunks - файлы загружаемые на страницу
       chunks: ['app', 'vendor'],
-    }),
-    // настройка извлечения css файлов
-    new ExtractTextPlugin({
-      // название бандла
-      filename: 'app.css',
-      // включен ли плагин
-      disable: false,
-      // извлечение из всех чанков, по умолчанию только из первых - когда false
-      allChunks: true,
     }),
     // плагин убирает предупреждения о использовании выражений как путей для загрузки модулей - the request of a dependency is an expression
     // плагин webpack для замены динамических загрузок модулей - когда модуль выбирается в итоге вычисления выражения
