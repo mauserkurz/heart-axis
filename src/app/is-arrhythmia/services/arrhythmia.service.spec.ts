@@ -22,6 +22,7 @@ describe ('ArrhythmiaService', () => {
       max: 3000,
       init: 1000
     },
+    rateCoefficient: 60000,
     moreThenOnly: true
   };
 
@@ -55,6 +56,14 @@ describe ('ArrhythmiaService', () => {
     it ('should return true when delta equal reference value and moreThenOnly property is false', () => {
       service.moreThenOnly = false;
       expect (service.isArrhythmia (120, 120)).toBeTruthy();
+    });
+
+    it ('should count heart rate, return array with one value if no arrhythmia', () => {
+      expect (service.getHeartRate (725, 775, false)).toEqual([80]);
+    });
+
+    it ('should count heart rate, return array with two value if arrhythmia', () => {
+      expect (service.getHeartRate (500, 1000, true)).toEqual([60, 120]);
     });
   });
 });

@@ -1,72 +1,80 @@
-<h2>Настройки</h2>
-<form id="count-form"
-      [formGroup]="settingsForm"
-      (ngSubmit)="onSubmit(settingsForm.value)"
-      class="count-form">
-    <settings-field
-      [input]="accuracy"
-      [step]="1"
-      [value]="axisCalculatorModel.accuracy"
-      [maximum]="axisCalculatorModel.settings.accuracy.max"
-      [minimum]="axisCalculatorModel.settings.accuracy.min"
-      [data]="{
+<div class="row">
+    <div class="col col-12">
+        <h2>Настройки</h2>
+        <form action=""
+              [formGroup]="settingsForm"
+              (ngSubmit)="onSubmit(settingsForm.value)"
+              class="count-form">
+            <settings-field
+                    [input]="accuracy"
+                    [step]="1"
+                    [value]="axisCalculatorModel.accuracy"
+                    [maximum]="axisCalculatorModel.settings.accuracy.max"
+                    [minimum]="axisCalculatorModel.settings.accuracy.min"
+                    [data]="{
         'name': 'accuracy',
         'title': 'Точность - количество знаков после запятой.',
         'output': 'Точность - '
       }">
-    </settings-field>
-    <settings-field
-      *ngIf="useSums"
-      [input]="maxSum"
-      [step]="1"
-      [value]="axisCalculatorModel.maxSum.max"
-      [maximum]="axisCalculatorModel.settings.maxSum.max"
-      [minimum]="axisCalculatorModel.settings.maxSum.min"
-      [data]="{
+            </settings-field>
+            <settings-field
+                    *ngIf="useSums"
+                    [input]="maxSum"
+                    [step]="1"
+                    [value]="axisCalculatorModel.maxSum.max"
+                    [maximum]="axisCalculatorModel.settings.maxSum.max"
+                    [minimum]="axisCalculatorModel.settings.maxSum.min"
+                    [data]="{
         'name': 'maxSum',
         'title': 'Максимальная алгебраическая сумма зубцов.',
         'output': 'Максимальная сумма - '
       }">
-    </settings-field>
-    <settings-field
-      *ngIf="!useSums"
-      [input]="maxWave"
-      [step]="1"
-      [value]="axisCalculatorModel.maxWave.max"
-      [maximum]="axisCalculatorModel.settings.maxWave.max"
-      [minimum]="axisCalculatorModel.settings.maxWave.min"
-      [data]="{
+            </settings-field>
+            <settings-field
+                    *ngIf="!useSums"
+                    [input]="maxWave"
+                    [step]="1"
+                    [value]="axisCalculatorModel.maxWave.max"
+                    [maximum]="axisCalculatorModel.settings.maxWave.max"
+                    [minimum]="axisCalculatorModel.settings.maxWave.min"
+                    [data]="{
         'name': 'maxWave',
         'title': 'Максимальная амплитуда зубцов.',
         'output': 'Максимальная амплитуда - '
       }">
-    </settings-field>
-    <label class="form-label">
-        <input
-            name="use-sums"
-            class=""
-            type="checkbox"
-            [formControl]="useSumsField">
-        Использовать амплитуды отдельных зубцов
-    </label>
-    <p>
-        <span class="use-sums-state"
-              *ngIf="useSums">
-          Расчитывать используя суммы амплитуд QRS
-        </span>
-        <span class="use-sums-state"
-              *ngIf="!useSums">
-          Расчитывать используя амплитуды зубцов QRS
-        </span>
-    </p>
-    <button id="to-count" type="submit">Сохранить</button>
-    <span class="form-alert" *ngIf="formChanged">не сохранено</span>
-    <button type="reset" (click)="reset($event)">Сбросить</button>
-    <label class="form-label">
-        <output *ngIf="message" 
-                id="message"
-                class="">
-            {{ this.message }}
-        </output>
-    </label>
-</form>
+            </settings-field>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input
+                            name="use-sums"
+                            class="form-check-input"
+                            type="checkbox"
+                            [formControl]="useSumsField">
+                    Использовать амплитуды отдельных зубцов
+                </label>
+            </div>
+            <div class="form-alert alert alert-info" role="alert">
+                <span class="use-sums-state"
+                      *ngIf="useSums">
+                  Расчитывать используя суммы амплитуд QRS
+                </span>
+                <span class="use-sums-state"
+                      *ngIf="!useSums">
+                  Расчитывать используя амплитуды зубцов QRS
+                </span>
+            </div>
+            <div class="row">
+                <div class="col col-12">
+                    <button id="to-count" type="submit" class="btn btn-primary">Сохранить</button>
+                    <div *ngIf="formChanged" class="form-alert alert alert-warning" role="alert">
+                        не сохранено
+                    </div>
+                    <button type="reset" (click)="reset($event)" class="btn btn-secondary">Сбросить</button>
+                </div>
+            </div>
+            <div *ngIf="message" class="form-message alert alert-success" role="alert">
+                {{ this.message }}
+            </div>
+        </form>
+    </div>
+</div>

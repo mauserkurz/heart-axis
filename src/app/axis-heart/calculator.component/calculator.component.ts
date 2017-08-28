@@ -1,5 +1,5 @@
 // angular
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, HostBinding } from "@angular/core";
 import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/forms";
 // services and helpers
 import { verifyNum, checkMinimum, checkMaximum, allValuesNotZero, sumOfValuesNotZero } from "../../helpers/validators";
@@ -23,6 +23,7 @@ export class CalculatorComponent implements OnInit, OnDestroy {
   qs3: AbstractControl;
   outputValue: string;
   useSums: boolean;
+  @HostBinding('class.container') container: boolean = true;
 
   constructor (
     fb: FormBuilder,

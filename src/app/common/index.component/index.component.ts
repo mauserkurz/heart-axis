@@ -1,8 +1,10 @@
-import { Component } from "@angular/core";
+import { Component, HostBinding } from "@angular/core";
 
 @Component ({
   selector: 'index',
   templateUrl: './index.component.html'
 })
 
-export class IndexComponent {}
+export class IndexComponent {
+  @HostBinding('class.container') container: boolean = true;
+}

@@ -12,7 +12,6 @@ import { AxisSettingsComponent } from "./axis_settings.component/axis_settings.c
 import { SharedModule } from "../shared/";
 
 const routes: Routes = [
-  //{ path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'settings', component: AxisSettingsComponent },
   { path: 'faq', component: FaqComponent },

@@ -1,5 +1,5 @@
 // angular
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // components
 import { BtnPlus } from "../btn_plus.component/btn_plus.component";
@@ -16,6 +16,7 @@ export class SettingsFieldComponent {
   @Input() minimum: number;
   @Input() value: number;
   @Input() data: {[s: string]: any};
+  @HostBinding('class.container') container: boolean = true;
 
   constructor () {}
 }

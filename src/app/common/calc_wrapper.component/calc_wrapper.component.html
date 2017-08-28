@@ -1,9 +1,17 @@
-<h2>{{ title }}</h2>
-<nav>
-    <ul>
-        <li><a [routerLink]="['calculator']" routerLinkActive="active">Калькулятор</a></li>
-        <li><a [routerLink]="['settings']" routerLinkActive="active">Настройки расчетов</a></li>
-        <li><a [routerLink]="['faq']" routerLinkActive="active">FAQ</a></li>
-    </ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="row">
+    <div class="col col-12">
+        <h1 class="text-center">{{ title }}</h1>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['calculator']" routerLinkActive="active">Калькулятор</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['settings']" routerLinkActive="active">Настройки расчетов</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['faq']" routerLinkActive="active">FAQ</a>
+            </li>
+        </ul>
+        <router-outlet></router-outlet>
+    </div>
+</div>

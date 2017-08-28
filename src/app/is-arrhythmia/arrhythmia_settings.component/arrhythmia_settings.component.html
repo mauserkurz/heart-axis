@@ -1,90 +1,100 @@
-<h2>Настройки</h2>
-<form action=""
-      [formGroup]="settingsForm"
-      (ngSubmit)="onSubmit(settingsForm.value)"
-      class="count-form">
-    <settings-field
-      [input]="accuracy"
-      [step]="1"
-      [value]="service.accuracy"
-      [maximum]="service.settings.accuracy.max"
-      [minimum]="service.settings.accuracy.min"
-      [data]="{
+<div class="row">
+    <div class="col col-12">
+        <h2>Настройки</h2>
+        <form action=""
+              [formGroup]="settingsForm"
+              (ngSubmit)="onSubmit(settingsForm.value)"
+              class="count-form">
+            <settings-field
+                    [input]="accuracy"
+                    [step]="1"
+                    [value]="service.accuracy"
+                    [maximum]="service.settings.accuracy.max"
+                    [minimum]="service.settings.accuracy.min"
+                    [data]="{
         'name': 'accuracy',
         'title': 'Точность - количество знаков после запятой.',
         'output': 'Точность - '
       }">
-    </settings-field>
-    <settings-field
-      *ngIf="usePercentage"
-      [input]="coefficient"
-      [step]="1"
-      [value]="service.coefficient"
-      [maximum]="service.settings.coefficient.max"
-      [minimum]="service.settings.coefficient.min"
-      [data]="{
+            </settings-field>
+            <settings-field
+                    *ngIf="usePercentage"
+                    [input]="coefficient"
+                    [step]="1"
+                    [value]="service.coefficient"
+                    [maximum]="service.settings.coefficient.max"
+                    [minimum]="service.settings.coefficient.min"
+                    [data]="{
         'name': 'coefficient',
         'title': 'Разница в %, когда диагностируется аритмия',
         'output': 'Разница в % - '
       }">
-    </settings-field>
-    <settings-field
-      *ngIf="!usePercentage"
-      [input]="difference"
-      [step]="10"
-      [value]="service.difference"
-      [maximum]="service.settings.difference.max"
-      [minimum]="service.settings.difference.min"
-      [data]="{
+            </settings-field>
+            <settings-field
+                    *ngIf="!usePercentage"
+                    [input]="difference"
+                    [step]="10"
+                    [value]="service.difference"
+                    [maximum]="service.settings.difference.max"
+                    [minimum]="service.settings.difference.min"
+                    [data]="{
         'name': 'difference',
         'title': 'Разница в милисекундах, когда диагностируется аритмия',
         'output': 'Разница в милисекундах - '
       }">
-    </settings-field>
-    <label class="form-label">
-        <input
-            class=""
-            type="checkbox"
-            name="more-then-only"
-            [formControl]="moreThenOnlyField">
-        Диагностировать аритмию, когда результат больше разницы
-    </label>
-    <p>
-        <span class="state-alert"
-              *ngIf="moreThenOnly">
-          Расчитывать если результат больше разницы
-        </span>
-        <span class="state-alert"
-              *ngIf="!moreThenOnly">
-          Расчитывать если результат больше и/или равен разницы
-        </span>
-    </p>
-    <label class="form-label">
-        <input
-            class=""
-            type="checkbox"
-            name="use-percentage"
-            [formControl]="usePercentageField">
-        Использовать разность в %
-    </label>
-    <p>
-        <span class="state-alert"
-              *ngIf="usePercentage">
-          Расчитывать используя разность в %
-        </span>
-        <span class="state-alert"
-              *ngIf="!usePercentage">
-          Расчитывать используя разность в милисекундах
-        </span>
-    </p>
-    <button id="to-count" type="submit">Сохранить</button>
-    <span class="form-alert" *ngIf="formChanged">не сохранено</span>
-    <button type="reset" (click)="reset($event)">Сбросить</button>
-    <label class="form-label">
-        <output *ngIf="message"
-                id="message"
-                class="">
-            {{ this.message }}
-        </output>
-    </label>
-</form>
+            </settings-field>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="more-then-only"
+                            [formControl]="moreThenOnlyField">
+                    Диагностировать аритмию, когда результат больше разницы
+                </label>
+            </div>
+            <div class="form-alert alert alert-info" role="alert">
+                <span class="state-alert"
+                      *ngIf="moreThenOnly">
+                  Расчитывать если результат больше разницы
+                </span>
+                <span class="state-alert"
+                      *ngIf="!moreThenOnly">
+                  Расчитывать если результат больше и/или равен разницы
+                </span>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="use-percentage"
+                            [formControl]="usePercentageField">
+                    Использовать разность в %
+                </label>
+            </div>
+            <div class="form-alert alert alert-info" role="alert">
+                <span class="state-alert"
+                      *ngIf="usePercentage">
+                  Расчитывать используя разность в %
+                </span>
+                <span class="state-alert"
+                      *ngIf="!usePercentage">
+                  Расчитывать используя разность в милисекундах
+                </span>
+            </div>
+            <div class="row">
+                <div class="col col-12">
+                    <button id="to-count" type="submit" class="btn btn-primary">Сохранить</button>
+                    <div *ngIf="formChanged" class="form-alert alert alert-warning" role="alert">
+                        не сохранено
+                    </div>
+                    <button type="reset" (click)="reset($event)" class="btn btn-secondary">Сбросить</button>
+                </div>
+            </div>
+            <div *ngIf="message" class="form-message alert alert-success" role="alert">
+                {{ this.message }}
+            </div>
+        </form>
+    </div>
+</div>

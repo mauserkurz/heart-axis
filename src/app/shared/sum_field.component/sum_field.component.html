@@ -1,16 +1,17 @@
-<label class="form-label">
-  <span [innerHTML]="data.title"></span><br>
-  <btn-plus [input]="input" [step]="step"></btn-plus>
-  <input name="{{ this.data.name }}"
-         class=""
-         type="number"
-         [formControl]="input">
-  <btn-plus [input]="input" [step]="-1 * step"></btn-plus>
-  <br/>
-  <output *ngIf="input.errors">
+<label [innerHTML]="data.title" for="{{ this.data.name }}"></label>
+<div class="form-label">
+    <btn-plus [input]="input" [step]="step"></btn-plus>
+    <input name="{{ this.data.name }}"
+           id="{{ this.data.name }}"
+           class="form-control"
+           type="number"
+           [formControl]="input">
+    <btn-plus [input]="input" [step]="-1 * step"></btn-plus>
+</div>
+<output class="invalid-feedback" *ngIf="input.errors">
     <span class="input-error" *ngIf="input.hasError('required')">Поле не заполено</span>
-    <span class="input-error" *ngIf="input.hasError('invalidNumber') && !input.hasError('required')">Введите число</span>
+    <span class="input-error"
+          *ngIf="input.hasError('invalidNumber') && !input.hasError('required')">Введите число</span>
     <span class="input-error" *ngIf="input.hasError('invalidMinimum')">Введите {{ this.minimum }} или больше</span>
     <span class="input-error" *ngIf="input.hasError('invalidMaximum')">Введите {{ this.maximum }} или меньше</span>
-  </output>
-</label>
+</output>

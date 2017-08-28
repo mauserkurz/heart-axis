@@ -1,37 +1,50 @@
-$color: #171717;
-
-body {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.2em;
-  color: #010101;
-}
-
-h1 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.2em;
-  color: $color;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-  margin: 0;
-}
-
+// common
 input.ng-invalid {
-  border: 1px solid crimson;
-  box-shadow: 0 0 10px 0 crimson;
+    border: 1px solid crimson;
+    box-shadow: 0 0 10px 0 crimson;
+}
+.navbar-inverse .navbar-nav > .nav-item > .nav-link {
+    color: #ffffff;
+}
+.invalid-feedback,
+.form-group,
+.container {
+    display: block;
+}
+.form-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    //max-width: 35em;
+}
+.form-message {
+    margin-top: .6em;
+}
+.form-result {
+    padding: .6em 0;
 }
 
-.form-label {
-  display: block;
+// typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+// host
+$host-name: 'app';
+
+#{$host-name} {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', 'Arial', sans-serif;
+    }
+}
+body #{$host-name} {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+// child component
+index,
+calc-wrap,
+faq-list {
+    padding-top: 1.2em;
 }

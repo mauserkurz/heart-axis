@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, HostBinding } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { AppState } from '../../services/app_state.service';
 
@@ -10,6 +10,7 @@ import { AppState } from '../../services/app_state.service';
 export class FaqComponent {
   data: string;
   calculatorType: any;
+  @HostBinding('class.container') container: boolean = true;
 
   constructor (
     private route: ActivatedRoute,

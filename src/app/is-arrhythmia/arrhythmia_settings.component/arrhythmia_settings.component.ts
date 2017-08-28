@@ -1,5 +1,5 @@
 // angular
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, HostBinding } from "@angular/core";
 import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/forms";
 // services and helpers
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
@@ -25,6 +25,7 @@ export class ArrhythmiaSettingsComponent implements OnInit, OnDestroy {
   formChanged: boolean;
   message: string;
   messageLoop: any;
+  @HostBinding('class.container') container: boolean = true;
 
   constructor (
     fb: FormBuilder,

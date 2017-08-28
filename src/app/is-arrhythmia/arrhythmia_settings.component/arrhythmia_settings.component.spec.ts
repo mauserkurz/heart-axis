@@ -68,6 +68,7 @@ describe ('AxisSettingsComponent', () => {
                 max: 3000,
                 init: 1000
               },
+              rateCoefficient: 60000,
               moreThenOnly: true
             };
 

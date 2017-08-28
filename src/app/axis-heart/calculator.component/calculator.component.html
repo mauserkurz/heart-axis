@@ -1,67 +1,77 @@
-<h1>Расчет ЭОС</h1>
-<form id="count-form"
-      [formGroup]="calculatorForm"
-      (ngSubmit)="onSubmit(calculatorForm.value)"
-      class="count-form">
-    <sum-field
-      *ngIf="useSums"
-      [input]="sumI"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxSum.max"
-      [minimum]="axisCalculatorModel.maxSum.min"
-      [data]="{'name':'sumI', 'title':'Алгебраическая сумма зубцов QRS I отведения.'}">
-    </sum-field>
-    <sum-field
-      *ngIf="useSums"
-      [input]="sumIII"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxSum.max"
-      [minimum]="axisCalculatorModel.maxSum.min"
-      [data]="{'name':'sumIII', 'title':'Алгебраическая сумма зубцов QRS III отведения.'}">
-    </sum-field>
-    <sum-field
-      *ngIf="!useSums"
-      [input]="r1"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxWave.max"
-      [minimum]="axisCalculatorModel.maxWave.min"
-      [data]="{'name':'r1', 'title':'Зубец R I отведения.'}">
-    </sum-field>
-    <sum-field
-      *ngIf="!useSums"
-      [input]="qs1"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxWave.max"
-      [minimum]="axisCalculatorModel.maxWave.min"
-      [data]="{'name':'qs1', 'title':'Самый глубокий зубец Q или S I отведения.'}">
-    </sum-field>
-    <sum-field
-      *ngIf="!useSums"
-      [input]="r3"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxWave.max"
-      [minimum]="axisCalculatorModel.maxWave.min"
-      [data]="{'name':'r3', 'title':'Зубец R III отведения.'}">
-    </sum-field>
-    <sum-field
-      *ngIf="!useSums"
-      [input]="qs3"
-      [step]="1"
-      [maximum]="axisCalculatorModel.maxWave.max"
-      [minimum]="axisCalculatorModel.maxWave.min"
-      [data]="{'name':'qs3', 'title':'Самый глубокий зубец Q или S III отведения.'}">
-    </sum-field>
-    <label>Угл альфа в градусах<br>
-        <output id="output"
-                class="">
-            {{ this.outputValue }}
-            <span class="form-error" *ngIf="calculatorForm.hasError('allValueIsZero')">
-                Все суммы не должны быть равны нулю
-            </span>
-            <span class="form-error" *ngIf="calculatorForm.hasError('allSumsIsZero')">
-                Все суммы амплитуд не должны быть равны нулю
-            </span>
-        </output>
-    </label><br>
-    <button type="reset" (click)="reset($event)">Сбросить</button>
-</form>
+<div class="row">
+    <div class="col col-12">
+        <h2>Расчет ЭОС</h2>
+        <form id="count-form"
+              [formGroup]="calculatorForm"
+              (ngSubmit)="onSubmit(calculatorForm.value)"
+              class="count-form">
+            <sum-field
+                    *ngIf="useSums"
+                    [input]="sumI"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxSum.max"
+                    [minimum]="axisCalculatorModel.maxSum.min"
+                    [data]="{'name':'sumI', 'title':'Алгебраическая сумма зубцов QRS I отведения.'}">
+            </sum-field>
+            <sum-field
+                    *ngIf="useSums"
+                    [input]="sumIII"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxSum.max"
+                    [minimum]="axisCalculatorModel.maxSum.min"
+                    [data]="{'name':'sumIII', 'title':'Алгебраическая сумма зубцов QRS III отведения.'}">
+            </sum-field>
+            <sum-field
+                    *ngIf="!useSums"
+                    [input]="r1"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxWave.max"
+                    [minimum]="axisCalculatorModel.maxWave.min"
+                    [data]="{'name':'r1', 'title':'Зубец R I отведения.'}">
+            </sum-field>
+            <sum-field
+                    *ngIf="!useSums"
+                    [input]="qs1"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxWave.max"
+                    [minimum]="axisCalculatorModel.maxWave.min"
+                    [data]="{'name':'qs1', 'title':'Самый глубокий зубец Q или S I отведения.'}">
+            </sum-field>
+            <sum-field
+                    *ngIf="!useSums"
+                    [input]="r3"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxWave.max"
+                    [minimum]="axisCalculatorModel.maxWave.min"
+                    [data]="{'name':'r3', 'title':'Зубец R III отведения.'}">
+            </sum-field>
+            <sum-field
+                    *ngIf="!useSums"
+                    [input]="qs3"
+                    [step]="1"
+                    [maximum]="axisCalculatorModel.maxWave.max"
+                    [minimum]="axisCalculatorModel.maxWave.min"
+                    [data]="{'name':'qs3', 'title':'Самый глубокий зубец Q или S III отведения.'}">
+            </sum-field>
+            <output id="output"
+                    class="form-result">
+                <strong>Угл альфа - {{ this.outputValue }}</strong>
+            </output>
+            <div class="invalid-feedback" *ngIf="calculatorForm.invalid">
+                <div class="form-error alert alert-danger" role="alert"
+                      *ngIf="calculatorForm.hasError('allValueIsZero')">
+                    Все суммы не должны быть равны нулю
+                </div>
+                <div class="form-error alert alert-danger" role="alert"
+                      *ngIf="calculatorForm.hasError('allSumsIsZero')">
+                    Все суммы амплитуд не должны быть равны нулю
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12">
+                    <button class="btn btn-primary" type="reset" (click)="reset($event)">Сбросить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

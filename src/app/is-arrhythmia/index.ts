@@ -12,7 +12,6 @@ import { ArrhythmiaSettingsComponent } from "./arrhythmia_settings.component/arr
 import { SharedModule } from "../shared/";
 
 const routes: Routes = [
-  //{ path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: ArrhythmiaComponent },
   { path: 'settings', component: ArrhythmiaSettingsComponent },
   { path: 'faq', component: FaqComponent },
@@ -46,6 +45,7 @@ const routes: Routes = [
             max: 3000,
             init: 1000
           },
+          rateCoefficient: 60000,
           moreThenOnly: true
         };
 

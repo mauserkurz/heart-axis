@@ -1,10 +1,19 @@
-<h2>FAQ список</h2>
-<p>Общая справка - ...</p>
-<nav>
-    <h3>Список приложений</h3>
-    <ul>
-        <li><a [routerLink]="['/heart-axis/faq']">FAQ по расчету ЭОС</a></li>
-        <li><a [routerLink]="['/is-arrhythmia/faq']">FAQ по расчету соотношения PP</a></li>
-    </ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="row">
+    <div class="col col-12">
+        <h1 class="text-center">FAQ список</h1>
+        <ul class="navbar">
+            <h2>Список приложений:</h2>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/heart-axis/faq']">FAQ по расчету ЭОС</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/is-arrhythmia/faq']">FAQ по расчету соотношения PP</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12">
+        <p>Общая справка - ...</p>
+    </div>
+</div>

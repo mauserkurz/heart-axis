@@ -2,267 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a8acf54-f245-4559-afa9-886c3451aedc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/00f7ec52fabf9fb5c6623b5f98941625e8e9179ae4d8b8e5ee2a48cb15c399c4458f1cea8f6c075a0c02e1534be4d169187374431ea445ea63471422528860ef.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/025eb868a47d285b1d78911b1dc72b5f5dccad84c7f594f1cbb241756e8fea18d245654333570b362ff10f2eeb511ffe688922a29ef6dc96b4e9de4f10a5dd22.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/0478be21a60fbb77c522d9ed1abea15ffb250c4a33fb005f9b19b08d24f336ed70125095f4d9956d43b7164b627c11df090ee3e80647fc49cc013bee74d5e18e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/048a1e0211fc5d69ba7b9ce05c6e9eab6631e6b41b840dac1d48c5a1e9186cd473ac0442043754e2f0fe12cd03a163e9042ba5d837336aeb32aabb630f2120e2.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/04f8f3b73add0a55e6173c7d04de243acff3773a7de3ca5dc835819713aca11e5baaf5d0112ea366354a57ca4a52323be7ec5e253ceb81effd78814c916af8b2.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/05df73591b832a9ed776b38cbcca42b2e8d8797e554bc5c37944af8dd102a9076774e93d5d23c7725557de7ec42d8bf6fef382b53637170ec88430d30380dbc9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/0638dc2da97d410ae6b5dcd63e4de93a108e751eaccfead6e5cdc091cefef4ec6f306bd0d25e08d88def5cb335aac8be503d7cd8788c25dc425ff6e7c2febd41.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/07268910befa5e0e99967eec6f9daffd9bca8299120087be599d481ac16e953a573581ef7be8eb3a73fbfe5aaf32ce64b601ce5e9782bfc40c8d10bc7e9657d4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/09706b2a355e3d3441bd117335ff474fda45ac537bb6ff921681b3954273ddbc373c952297569c4afbcad76af0e4910011ff0472b4ab6d78830f5bc255b1e10a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/0d218539f6167ebc409b9a5521934ca06863b26c07e2491a1ac7843de2689ed653e075763cc627829e90abfec430e3bc815968a8d1e5b66fe744aca702d575e7.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/0d45c6f5ed753b3dde2e945b8f2f2029c1d4955b618834e02671ce5190d749dd03a743ca4a1c289e5f7d431662635f6aaae03b6e39eb1a781e770c2f69b18a89.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/0eb4eb1a8312071ed618c5a48816eefd7f3e54de955354d21793caefd29495ba7dbc9e2e2d4226439dbfaba310f3b7898fd1f184007185ca9e6a951c0dd74fc0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1000672bb1a1e78ac360a1069ecd9c70cec6f486f791544b78f976663c46d2df7294572b729f2b5ba544b5107b8fdeac20a1b54b17137e1f50e655b57e2c2cd5.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/11374b4682bb085aac639c26ec9ed413ce548d0f140392fef40fee9a5e4cae2b4079e7df5df68380c5e2997ed013296aee9a59e9369ca3aa9f32cb6d7ff6dbe9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/116f9a27ed9c1d43852180064100f83aee76dd0cd1fdf08b04d8be6e591c0fd2ce8c5f0890d51b21b1f515a5c2e4aa07d394f0fc0dfb2eb2ecb776d6a16809e9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1230c305dacab136dc538966e95f1e5066dd25a0911723bd5caeab993565a19a074d7d1ccde842a4941f548ef0cd505f514586a2ed2d3a19926d9d323947c1a3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/125ea47498fc28b9d30611d0882fb21c35658cc2d238a8a4fb88369fa6843934c66bb856f1316957eee63a34beebee2e49369feb84f0a3c6177512f56fe43fbc.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/13e6ea1bac621810c6d3356b8ff91308923e42381563a9429df0cbfbc371af8626033c8b30293a05e70bed6f985d1e4a444897a693f7dd295c8409e4056d04e8.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/159d6914ab388f52af14c305b3e1b94a2256b912beaf65e131d2186414e202bb66bcc9a8988532cfae7b94a2db4f5b671e0e6a99a6475357323e3c44937edd15.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/15ad89e809b01f2c15f1e9b71ee2a5f123e82b54fcdd05ec63fdafc5436e439ad25024a11dee7b26e13dc703a3556feee54d9f1300828710122e77caa84bd365.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/16eae9de43202a2035424ea8cf82093835fa3ac9e07242728107566facd11584d121a5078aa5f0107d664373c1c642bab901861d1f83b650d04efa6b93b2c7ca.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1bff377ab824ba4a36ac81bb57874a2e39bc125debbaff15ce305cc69bea35e6fe51862cdc7dc43cf4744356b16c146eaea69b5abfb4be5b192fc08a2feb1d9c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1cd0f6dc23e1bbe09330a1eb640af7de24449f8abb32b7672313c5870418d38d3d973bfa063550c80e6302c0e7e1f24dc3450ebddd50e9a27aba7a39bcc78941.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1d3207864069c85e61621d7d4599934c707c60477e0955c731023057bee1dc6b8682f991c33b59c08823e2d33451d8effcf8cc74aed435121d68f2e88c3de138.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/1fcfea894c12e6f8b34d29594e2a1f1f9d763b62f73658fe7b96cfe920eed594b001cb9ce2fc1a9c584d4e6e0f9d4fc8d875ef19991620bb1a2f600dfbe4c5c9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2005d6cb9ddbed677e4e3e40564ea54dd6720882e5bedd280f3276300da7862959f57a3b458193f05634e6087cce2cc3e0cbb9e6bd10941dca2bcadc1560e418.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2019446b81d02df99805158e34e54fedd831ab4a9dd0cca6c471176411481160579ce5e79cb2e6c71c4dc2d3e98fd0df13476213dc7ce8d5e50c8e6956fee89b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/21265f5d3c7dc32b2ca7e98355e728a415fb6e1207aa86ada677d0800db234183295ec1822eec771a6a2e14c85470588b46e54084bba7173cf34fb78cfe5c4ce.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/21fadebc5b07fbee5cf9fe3aa1202454a616df1640962427c472f1612340d34be4eb29d9035e3b781fc58bf586c7045ddc52a29dd213bcc542825e8506e470f5.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/231e9e1c26c5f2ba2fe4d6713befe4ad164ed8f9f6653697d14dac1ab891b0191741c8d59cf8a23847bb26eb594d23041b7408f5ecd09cc40d32b9acdf67c124.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/23d38c5ad16f0a161d93ac1a623a462b128cc12071975ff3d5e83ed0b386e592ea7da480125c76e1b76b3c9eaa48d06beef5448aa8e2a540d4baa21b9f9b1562.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/267f312a18a319a1a582bf8b68878f14797a3bebd71a3f2bfc113cf3d2ae94278f349014a4a1e52850d7afca788c0b4c27b1896062c45eeff98699c6862a34c1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2696b0eb195a2b316ad1204b557559b6eabdf494af93833596a221bdebe398d0b725cf06913e3b80afd5b4a36938e35044364d2892e68104a469592ddf9dc742.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/27902155541b491b99a96b8782d82f8403ac124e3db5a82a8d77a24c7f35e39a861f82c04f4954225c38607dbf1a21dd0f6d8a841dd55a6c264865f7a7bf9cbb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/29d3174a8b1e3538f15c7bf2077d96b1537b7b2cd6a5943cbf15c436e0db42ff41b89cf4e4072162ceec79a2eb1ee7716b553ba12ff35b5378a46ced89fcc161.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/29fc5aa74b388384eeb9e683912c3df794de3a22b4288a0682ddc169c6bf02bd1fe653804a170653c03fd6fce2e575373e23fe78142f17b5d354606ed8f0ef08.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/29fdd3ca0f84f7c6b3f055867cfd07c98b047a6c8ceb67cc86842ea2fe794950ca4aeeb128a360defcd91ef73c227beaca3621523ed9d102fa7ab5f4078cf471.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2aadc31a188574e3b7a9d65491ddd99a692cbb6458a2177d8bd88e56ce3a50829d80baf4abf13b10b845de43babf11e630cf30a324a9458eb485c062aeba907b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2b1810903ef503896a4a44358e7e3cc46df3e9141a6a94f8cbc9caefe2f85233514b50157641d956dadfa4f35173d97c1c0f52f3eb13637ecd1ec2207d33dc8d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2b2950fc1f3b6c584932f5be74dc1ecfe0ebb9eef8a5a0e7c992c3a303abc27ed13eb32602d91a950dd569d19688c08f8b74a7f96373a051badcbce0240faf4d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2bf76c208887956ac6c01b30e264585ec46e4127897ca27498dc65e28f45196588cf9162e4371d3806654d5a86ea79167ac5a9ad319d99c215781df92921c2cc.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2e3f83b60b30e3167ee4d12e02fc52459c43611b93442de6f5f12a4198b1138faf3d7a59df94ec2241ad3bdb6f4fcc2f7698533427e4c699a837b8db09614eb8.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2f1cbcd6c968aae53a0c260153f5c2fb0ff9b6eb059860d3eb68eb6e3013fb93ecef8ab318defe11bfcaedb6410e64d103774bb61b41d4ca1a72c393c526b517.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/2f98790c88339354be598224e558859a75e853493dd81bcf3aa8724e5010ad0b7b871683d50621301527738776e0f79471127959c984b6a80621ed03ac4ce2d8.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/316beeaad6a0b078d659aadcaa301da7482727ea61568c31a14c92576e839cd0d11f9f366d02f219fa669dbdb2b4fa7ca632a2bd1596fef4933b56c8111edec5.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/326e455dbfe1df436e688c2a9fc6db165fcdc13d9fc5394397ff490a74724cb4c61d44078e03288c34ef174d2e77121e166939282e8c3e1ab7b4b391dd804e98.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3285ef0020cede7f1b13d2c46cbab691fa7cb3963ada5fedbbb61eee44d89fa7af0f1f9236a15e06af17fea4a6306a5e07c5e0ef04b17e380531c03aa728bb6f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/33176fba93c287bbc27b841d99a3cc4d53c128454919cdd07ddb38e9df3e301f11a565ffcfb134d600a29cc4fa0d6eaee1f66032da44458250119ed0543096c9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/33fa9a9425f214b60a7a158cc9ffd9435bdcf60a928764f2269f7afe5b66933049afeb75538a69a31bd6ec4478cc87059778726b0d5dfad727c46c3e0a9248e4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/34f406473533065385a308234186c36bf0d2ea4cbdbc1ef1b36cb06caf6d1646c68194864d9592f45bc2fda600ed3b0f6a5a762f468fdc8574f2ac964fd2e959.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/363ef3558b3ba784be1340be062ed9ccf5b91c81f432ba3918fac098140f8caf36004e3e92d1a923418e4a82c5f21d85d11dae491069d8e68a26168fe84d6be2.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3815e8f41e049b580a5b38409a7a593ebf70cb78545ab45b8c8d9884074be1f761b2ce18b9c65878687a382f994eb833d21a773626c145059a02f97692a0596c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/387a99d0460770b43bb86add11a5c0bef3cb605b86a350087eed818292c32d75b186742a8bbafb0fd95df624b6cb7d37b58b5128af921cc085ff5d746e2ff9e0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3a1c1828c86e65955f5687137d95c0e2d06b1bec5e04961998c0e9423dc416cf54dad3979863189031f67e09d5cf7ab5219feaa111ca2e74091cd60ca5fb4932.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3b1653a0923fe8fc1dc2fadc3eeb62138858ccb2750fc3fa4f1848972d84ffdef630e8bb95f42757d25c8f0dbdcfb19cd145eb9e1c35dade19e845b33132defb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3be7c8ec6c75090f373714a5e18631f8159db91316ff2311ee28183653eb9ef3c2a4c2962c9f99677767cfece0521df5e98f3e53352b999ffea47e0106e0e89a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3c19c49d2c1e321a02340330312ccc1c345d7ca0758ab80f0481c189e0d79e95785583abf70935e736807d099a542f23c38fc7b57ce1db3d1ac5251a0daf88dc.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3c1f04863dc25c06cd1aa8172b24d6ae9294aa867b508ad5145290a64e2c1ac297443a5e066b2ed3ffa0e4e66cffd3b1409560d0625ace8c9a7d1af5dd0472bb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3ddd4aa8e0d6ed3b81ea831b383d595896bdf583e98464815f0f915ece674afd4a59efdeb042520f07080eaa7071b092a634098fe94df6a2db6967e177419130.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/3f7729fcf6f89a338968648c307305b8694f8e9a92e1c283ed82abd2eee8efce67a1b1fc71aa03ab713aea364cf8aceaf72d31c5a6185c530bee0051a0d27bf4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/44f4932410a5809ad6ed82c24870b22f356eb10bfb864ed62561cc9bb19d810aba6529fa9a094984d81f6205eed572dd6c9461b6bf7d23d5d67cde38ebd7d3a7.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4608701c7ab5b0a34d36bc707e1dc3f6fdf7de1bc21221532169e7a70f071efb61a9dbe502bd1bb67da906b3698baa5daf9bebc057078296d4262c1dbedec843.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/469c7dd3df0c5f4edd5634208068acb0f68c61b0957d79499642a9f39231411774546bd7b6c5a9b256ae799af1e1c97bdc2932c67865db1e854ce65b36b37a34.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/479600db072631c79688c6daf2dfd58304f2a794c103f960cd5cbced57ca4f58b50c0a6dbc4f6b08a8a4e1c3e46d05b39ab7df156705e9f08bcbf017de97274f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/489e601304e48f1ba608697c77fe1f6ce1a09968c4a638f0ce465b1604f035aba88ac45da08d7279664e80c3bcf811d395e25398618bc73257d029f3abb89e49.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/491a79bd9f66b620ba01d2d940a9209888517aa2e6caf65d8dc10f90dcd1b5f4450717f4fc797a2460001a9806356271ffac7e8ae8b7d798903fe8b54596e971.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4afa6e4502ea787a1f9562bea1c19973663c5695ab6d044d47d70125d48e7d28f80877eda5a94fe9b11378fd14b9964366332ec0760ed236ad0d91aed472f7b6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4b44c542cd614a5e689c1661d6173cb05e6618a0d120172778b411deece8e6df3189dbf4847c0c5a74b40221f95f9f712dd2bba7265158490802862bf40a0e57.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4b8a945654be9dc870d16e78a4b6c1684fa4cd964911c3666ae4ac4fa3eeb3338cf6d510f4f0e083b166bcb085b5c514d4dd66300b53f66df020850140b2ae92.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4e38991ff0a1a565d225a60d322f2806ccd0fb9c0cad75699f02d3458bd0352f23778a5e4cbdf75ad6a6a59152d96fefad33445f4a473df31b94f88b9164633d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/4eabdac942e4722be666a15b191d8ba43d3e7a180f2211b5e6bae249cb3883b79855723d069d265bc28166abd1ed6a68c6d3b086a1d012d86d247fb6e7499ef1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5018733f0d5a5ede84c98928ba843e8b3fbf160705fa617954e6229f17fea7b1277b31db2c5dcda999bc208a07419f643b4240891ab6ec794a728c6fa11e05c1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/54addd0ff80bbbb14f7af3e0a9ecda7e6dd689609729377e3b25312677800539033cb449d4e727fde7aeaf92c9a26c7a10665651f7fc20331f693265896f180e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/557218260a418ea16d48c9913e809289230d1e13b38935224b30c6b4c6eebdb9770980855cb849bc1e47ff40b3f2f33604e530cf7c1286b3b2b8205d91f4542c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/56b8ff34f6e1f3287f18186994d5aee4b2985aa46b1084bbe731a206e7554c6b0045a5fc42324a62301dfaaf572dd02b37e6a3f26f2733959b70c8b4282b6b59.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/58425e13658a5d466035f973878225df4d4d55e768e26b1684400b4168c12e4b0b66f23dada5bfe7367b3239ce8e29bfe78dea7d2c440c7cabd26b6770226a78.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/59c4fd11d3c87cf6bb566610b33af9e5e0fd687b71177e3d2bff994493d09e08d55874a3cd60c3eb73861c28aceddafda8c4f15ca49e738d3e31f9feef955eba.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5a392a90145c63283d5b5ccae3406da2b05c13b5eeb8e24ed38632ca9b6b680e24836f3f3be7526a88c3245041074ec38df3b482d7f0eb40d1c0f5896ac7266e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5c1ab38588f53919e8541b1a97e9ff989706de74e9a8458b34f282576d761a9330c24c4c107e53ea0d15e1570c34d571cbf1fd5fbafe6d7d89728850bb46fc27.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5e31a97055eb4abbfe9745812f316c6653fcb4e9f23e371a69635916a5eb89ac3ecf02d8b7adc266af471fcfbfa8e1fee8815f32dbbe06bbd36a06cd0c158438.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5f1807d1b302b9636c895415ac10babb0bb521cd4b275f9f4dfa8be0cdb63428bc466b8c1a7b349d6cc93b800791df7d5f02d95037b594ac7f4c599cf348079d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/5f9cb30188865f3e2ff264341b948e1f408eb09a694c4de31bad2005320c1310eb385c47d40b4a7cf69d7a1016e910fb7ff691b5070d3a28eea222cb5c07071d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/60cc73689101619d66503c39e847e78eee6758b705c6e5581b4b4ee71bda7015e8344866b9f7d6b0ef03c4e40d3aded65607b4036281aef1f21212eb1d7a2a50.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6101aaab04f6e8d1185df05d1784ae4ee5a244539f855b17a95ef5bb0cee435643e9847472f334f4073e00836868537089cdf9a483cdf8115920c1eaf677e78b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/61b20aec0cff1337a1e47f99a83777fefdcceb93fccbd436408c6fcea82b78972bde0f6ba7e539767e8c7d8909c411c3b607ab6a480d59faf19e6b1495adfaea.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/61f9ff4a8e6b75839e6c3b025ee7b1069aee6307e8afcd59b9939ad35486591c3173dc72d661090b3b53dfeee138f6896420787f0820ef4b42c38550befde8d4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/62028a95741a3304153ff58c2e1e659a6749a98891b09c54e6a863ba95b43df92a3c885f01114ef28decdbf8ba2263a74806b25fd4052edb39c92c718a92ace8.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/63af2f3fc330d81fb968d45fdbdde7b54c2e9a52e8a8408e20fd4f9fcb8d4292092a972ff8a2d4c42e4ad1432252c7effd37afc44f337c95393ebb3bf3761198.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/65f9b553141e3e6dcb7011706c96f1ed591cd980b78723851cd582b69b71325ce221190ebba1ffbe004255dfcd41622990d1625967bb2fe52248b9ae27604b35.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/684f288374a7ab7595628e9d75aef3d3cbea4991e795f2f672a10a57445e524dfac1b95425d8d16535d94fd68b48cfa39c95d75e20a0fc94e93f558d7b112635.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/689944f742d5348e2cf8345ea19cacb0bd4af2f3a87785e0cf51113e950a4dc68f1fca4799c701060fc1ad3482e14ec37b3d731f3a222287952a7dc5fe5e2665.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/696174b7a83cf59138af449df6be7fbe5e8520e6e2ec5755e966f4968c60dfac8458039b35514c26b9545ae9c5a3f2eb20a07bd4687ce19f9f3858c9a06c9e72.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6b0a7d840b80e13110a7956eb4820adf4559e865df42363f2597b70384e16b89d47dadbf7b543254f41470bfe42e62d31fd2d0a822fa74288bd0a19186c9e9bd.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6b13dea4ce00e00979f1f6bb975039135e5efde9f3012997bba68b39b09a959edfd3a3c8817ebc6616d8adf26efc24df94ea3a8f1cb9ef519065abf3478b84a0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6c4b756b92380a4d9b348d63ef54d0edfb2c1ca7a0b385070cb4212006779184ab3adc39dac9a74ad385cedc3550c0055f4829268bd88f5533eb4792bc538af6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6ca8cfaa20f52b82b202fd4edde71c4b699e2019960f8ce9c4d171180c5d8d5a3a64b60f993623e9d88e99eff6c39f431305e76d83b768ebdbf9b321b957cdde.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6ebb90ff939f3de988b2b8c5af3c439ca0b21df9faa9d682e553536dc5e2753495cbfccaf3138820195764fc09733f0d1b4c907d31851d66fb04d3dd9a0c8144.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6f54eb981cd8f9957eb005157c3da8598e6ea184801d53765cc1ab29e91ed1aa39129648c3a2694d3b89a7d8aa142fe0269e534a82b638a849915cc30bebd151.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6f8d3052aa50f3528e3c97a17c2c290c16023130c1c2a9db652f1c1d0973fca910e345c826f50a2bb2e513b0c548487189248a27ff755b417378fe429bc755f2.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/6fdb4070b27be9ffec768e97c475c2b901ead9784fa8ef6eecae648fc08439df8ee9fccc52899a3c6bebb7639b40c59b4d349dbb0843c16fc363b14a6c4c7d7e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7120a9fb8cd7165cdfdde310877528026951f4781d1667555d88d2e288c77fb143596a8f8e561f93a9871957d083ef518f37ef17d9f2dd371400516199a31855.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/715c9c10e2a82f6874f2b5090d28c5a3c3a82ec5fcd03fbaa696ac3aaaeacfe1c9705b4ff477340751c60754f578ef9e0f2ab10a5eb630b83ccdb846341d49ec.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/71ab74469a6affb766086db8fad7a73d11784bd170d5ed7164e7785159407780dcecc63dd2207877119f4d706765a136b248639a3fec95e49ecc510595173c8d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/72b7c01b211f78fc9a7ec310069db89f174501f13f409f61a0957b27dbe033b2116b6d4af233fc76d1887f6c4c70919b187a4fa566105813250667af707823a3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/737ab111ae27ae11ed7f44f703a4bc2bccb2b5d670fdf1ad555b4ccdbe7b369cfed886ae7fc1d6db83357359d5f1f41e1a71816bdea4cd57a391b2c64f29ab1d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/74596bdb5c132227ba623d9e270642447b03c816cee1f17f0576eddac1f70d64bdf30e941fa4d77bd1c4d234e0c3545dd2ea4f14107ecd11390e911666ef82f6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7616b6e8579dd15f5a0918a3570d67a423e3aa9de83ca56f9cef6f99f406666289d155cf45099d43d4d144f9314b3d67d1096aaa504dbd7f821df85dc0e1d415.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7643467fb3eb47928e93717678ee944a31d3f42b3e836c052a871c1e6d5635cd78d1332f39534a3741538d5f20c26b2c06119116b8b58b14138845efe2471d15.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/76acb6e154b401b65cbbcc4ee37034c848bf09fef9c9501fb23e25802e6e72d0e403ea6616e37a580f89ecf54bc5c084a19b30036a2150be3e40979d83d81583.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/78a78cf02d3d13de839a1a4d8666c246b3d1e0cddf3abe045ad59521eb33136f1f4cb012752101c45c9191e7a184ef5a6cdedf3f510cd3127c5394bc2c368804.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/78a7afbc2aca286769345e1a41d87cff2413f31aedc8ecd01c708f50387008302e3b974b956a725571c73895e126495d10b6150e28075959fd4f66a66c05d171.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/78b9693fc1e50984730b1828d21198778fda2f185e8dc9b5ace923e7795232a063735c866046830be02e41f3b560443b16ef56e74ff1cb8333af29910247cdb1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/78c460c84def2ac423fef73714dbda73d6834856121a8fcf0a50e8072fa108e835fecc3d434e729d49086df8fb9865f6b8aab57aa27961818b9272dd509164f4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/78dc2badbf0298d5ed2950672b9484cb187d823665fa0de4808f79b36fb577e6b5fae1b55440afd060c6085e5ce533889dce146e0287f5c01c5b1f71aebf94e4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7981f3f7a3814ca4230dd6ceb28a07c1c1713418638abcbd6a32f6c67b85103cdc005218d9859b1495786ed9ff9362c9c60494caba9bf15ed68e024cc657815c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/79ff24237f99f3a97d2b046cac6e79e7202b85e45fc3145a53f5e6aa35e48620c8a373385462f5eca49a21f0319074247d7325d7c530e0569a6f3106b15a368f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7af3756a6b0dfd10d2af1137592ae79cf7f12cb8089051b274d0edf8c7ac54339565ac156f7e07c28c28dad8e1fdca998a585dce1e4d2a5794080f18cf38a8b3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7b47a1f58043d50e3f53c831fb52ab6055b0fc8327eeba7142dfcf5f3967354f5ea14bc26d0c50f6c4d3ede5238976826ef58491cbadb6a2c9a4ad613e606d70.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7c6723be2139d2e7dda693cd201fbab241daa2c267925dff7977b8e6cbff18b6a5c804b443b78cb0078a3147a82e56ed9e0a734c092bcb4809cbdeae2b7fd2df.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7c9c9516e636e595ab8e48b13d422f9f52a3c22e6de4637f2e116cd61e31148ac7a2db6a17b3d6ac61c7bc1f7179d116d48f205a2974bf6cfa08bd4aa6a4fb18.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7ce08da42bde5cd8b24521455a1209c3a14ff2aaa40abeeb0739f93fd2b68c9442c1a86957f1c85a3a48d2d65511d492e6f56fb084ed9132fd6d468b086d01f6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7db9ae4cfe608b6313184127340254e53118fa8b0f01cb70c69888fa78f7b35e218f21b91c39afd518f4893754b27cc12d885fe1fcb961c47939320deea25310.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7e003f3e552a857a4c3394eda177c845331af84c55272b470e9d9f39990dd3f6c8bd6204e446bc2f8625171886cdfeefeae817edd43e6734d931e56aaa871a9f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7e31bbff10abd1b186b611bf8f108b3ff638cbda9700b51867c928d5b9baac64ee71d5ce7c8092c82b25a6c0f26975a48d4aede191e9f93772546d96d9dabbc7.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7e7f7154b4671e03a4d1926af2ea1908d30597133348696ad85dd1049d8ecf51e483a930b89b9b23d792ec1ece73484e3b176064c12bbbbe3f658246d8e88e88.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7eb5eddf92b59c963c939a02632511833a8d081ac1be4185e1147f41887f2ed9661d9029fb395f4462682b20bf34817641b6a5ea2b02109d1b2747da5725b9ec.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7f0b2a1ca39617b58e701f694db77b28ac0bb977878d033eee6c77999acbfe8acc11e3eeab5842c967a5c4bdd2220a1283e8e16c10db75e92b4de6fefa3832da.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/7fe0ad5192e074b5425f7e65dc39d236454c9e78ad4bdf677eb9a357a2e584818bfc08b31cebb5df72884cc70536902c83531128f256b75d7a7094355d36e88c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/80d92b6f3ceb1d581e447f1d7d30e939a240cec49f3c23269ded0f1e926b3818243213555ea0a0725af1b4fd7a6fe3608334a295af1e51991a69291d7ec9d66b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/80de0fad3bd66c0d7872fa4efbcdf9e21d945112708519df07aa784df1385895ea9508894d61a08e43f74d977b6dfc5e3dd937541f316bb718aedca28c15f47c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/811bff22d223dacda83a5da2d3e6a2849a3f7da33a2fbaabbbbbb8601208df8d70049d5587901d8e4539df74b7fd1f1809519e9035eb2fc15faa6978d7328ef3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8339f2dc518484372087bd1d1ff8663bac4ef0fa6efa6821bc8dc36cf8186636a625afb3cac7a21873822f034c9c7b61367a532da25cfb3b19a4ae6329ddcbbc.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8386cedf09cc777afce0e96d4b188c09eef844ca7d6cf20d8ee6f86cc6454e7854dde2cad34162111f9d50cea875d47d52dd6cbae6713017dbee9257527d3281.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/83ed7e206fe2c9cde4305be443701fa018ba922b321c8d315410825b0d62d39d73979c465265a1c92f04a940f07c67a9ca0533baac2a97326bfbb72813c836b6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/854160ceb4394132e724df9515092910590dbca751655caa44381877e46de5ca5bfb02554fbb875ee077358d5da3d593cd113a156c8ab94b9ed5558b6a049e97.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/855a394a3c2ea280cbe98ddecf1324f37f3ef4b8c3c19969af2d0b1aee0a3927a016fa49e48344151f99ae7ce052d861be9236c4bed72c964bd60d8531d16e6c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/87e4a43adbc3498be257da53a3c1511c72597b64def280a9be280b1be351d8903495580849dd39adead00183e77d17ad1a17a84f2d3b7eb2fae3d62dd8cfce53.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/887cbefdcb1f8d8b7838ec53db715811468226530e8cb1d9ae0c397ff202223d6b9ef97ce8e90322398c2d2d8ffff3e367e11819017df084f754a4f879e39d15.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8922ae9d4614089858742411c3a3074ebdb2d4cd0a6ea4ebf80633138106b531b44c4fae44906a9d8abf5045e65729baaf097c5d7c45b3b633117e4513e6e00a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8b0ebeb11c4d8045a7a891d31a89299efd86416aefd7952c3b399d8d84d260a26e3c65a328e853075aaa054bc595f4551b26ac6391d1919d14dd49b22c7a82c6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8b6497c277d22146bbdccdf45d757d174f41003b0c3c25725002d230bacbaa3d0a8740a24f8f81e9a4071c7cce459663f77a29b9f0e5b9cc9ae7625a4c74b3b7.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8c6ab8cd8312acb40afa8da21afa0aa6f4a31e741ff6a5c11adf53bfc8de34b17019a6d6f8fd4f1906d674be41d4ecfc25c873c52a81246c83d34136ed73d903.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8d63dd7306d1e49af1733b24b52c76b94e364e23b7583f9e371f9e803b519d79caddd8b1ef024bb7bea796faa7ff0d7dd47b4b255dde69ea8bfe3d4659a2cbda.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8e16754c9d7c386b183019371ee57e646087ef5605da015063044dfaf2b47d6bf474050dc989f9176d29d6d9a94493e0dbf290f52392ced1a4d28bc6ce7751fa.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8e5fb89a016000d5c017e8eba4aa94dc97a5c3a17f67b1abffe2f9778345f8148664c695e9e7f84ac0f5dbc174c6d44742f191b15e9999b529331c2ef1e8ca36.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8f2853b6945bb91cf9835c02c98ca0cf3ad835cf8101dc71736bca7039bef29d2da94e64152e465f836f01d3bfa06883b68f136d831b827eaefd6993452f486c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/8f3bcf0d7111576b48b213a7bbf468af23d7cd5a84e3785978bf2df8bff37a7536188bd6352568f04e2d9083ab2e1517ce3631bf51b3b7757bcb635702e9dbed.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/90ad23ef2d3afc63162e1ffdcbf15f4f93ab59a6c7a9bc8d9e9b907528dae43e211a8cfb4bd3c490922705d3e2d30a64ec5d4e940b0c0a953f14b1fe8e6f959b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/918409f1a0b197235c4a9700c6cf0de7fb703ab29bda52e5b66da4e8363a8f90b59b7c94215596af8676132df29019ae7ae11d3b8c9181a31c0811615ffed49a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/91ab5ac1193ce4602ff765aa43d2cce896dd15eccec0bdd21e2e6c32d5ef76538ab11bede1cbe75594df0d03d268d6c559e53f53a589b2eb8458e79fba4289f1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/935dffff33ab6a936bfaeb4f120c7a0ac73aecf901169a19db4d65df7da5c7a918b7dc1798ab60a8b40b7fb0efcd6ff9b32611a93af395d1a76d1e327e753ebb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/93ce5220478fe32ee2db491ef9a90b33ccf5e2ab1575824ec985e23dc04a47550f4102bd6dc1e07046bfe0c4879acc6b50fa518c1d803e3ac740470d1cdd717f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/944289f4f7471c985fbeee386445398924eec385bac083d19018da309b8168971250b7362b4aade874fd24c59ab341d0cd967b9730eb391eedd7cf52e2df5482.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/96fed29b4feaa8e17e9e00ca58f07039dec97f718695c53d7b6e44e7fe92ddbaa1341e180a32c73656dc75db5c947f451ce6b090cbd9a84b23ff6692432e4548.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/96ffd090f09ad4a7d5e4797b8720c6c613651234abfcb666b76fee68446a53afb9f9df21acc7e93031114af1e82318567d875b74a9f3315a105833363ed1a2aa.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/9826f22fe41ea8cb3c4053de27c9ac3ce3a7a3168ec09f8261e1f6298cfb82d5ec413bb4d3d47db82b27980dd270a8396ab430eb18b901904f3c5991d635dccd.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/982be6d59185bf3fbb8403dd59ee9d57877cf1283bc92623c5cf72c5d1cb35937bb5443c92cb172ee990dc3dfb1279067b0f293e6d906a53b14420597a0d6172.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/994c8e1198bfb8a3e3c2769b051a1a09ffb9ced730876a5e068c8067abfe9b1ffcfb1fcaaf90d83dda4c66b5259e78844e743be2f8abdfe7e74cb0296e533514.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/9b33bcc2ef4bf6989e48ce31dbeda979f85faa7caf1d6901a93bebef7af228230ca8198c234e166e1da6c1374012ef511e5e0e1378427c42055577fbce1aad7c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/9c3e74c714370dd5322b86b147192dc9bd1b8061fd5e79bf568179c6f8586de26f3df0566055c526c71550dbb539c5899d10e97a37da74c48e76964245fc962e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/9eabd76b81fe609c2ca72a750df3b1e53d4d9b3bc7e95c03c22a484e18f856faa016b0a34a8b1921389af6983b445a14f7fc75c4b458324c109d51483e6476ba.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a0360a079f68a4d6ea304abfd1787f09e27922973383ccb1b4d61624f5f28317b0df1f27959399dd0bebb368167acc2d3b183cfeca0174fb732d74dea8fcd8c4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a04c06761c85f0061a28860a06963a5b30027415a71553ed3800366d93a29126a35a560ef2d050ee8bacffb2ac60c895c541eb62bc1c3a7b27a73e48583789da.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a052efb006c633ec5b1d53ba8dd75b56582d0e88cf36419183012eb55bd7d54d7d5d98ad1cb0e3e2999e2191adca35a51bdc3c5fd7d6d7ad7d46939fefe0ffc0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a11fb62c8fdaa090e67f7bd76ab436fddf170cc72eb59dc115fa748cb447c39cf17f50fd004191f8787f4c839849f4e5dc7dddbd03154501e0a8bbbd9f677af2.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a1264ff765b4f9d43dbc2040f66fc8de727a5f4759ec09342853e54db7deb1020a2b0a6a69ede507df06c34da04f4c6d5800887bc1ed928035126d02aa6aaaf1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a1dd158b537d09ba105888959f476a4ebb9c26819a05fd17ad5ec9ae6e0c07db6c75cf6073e04df671782ba964f81549de4b18f55740f2581e13e96c6da0688a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a41f00d9031ea00587225e008df2cb93f63e1612f9596f41cc8b6c035369e7c4076814fc08b713f0d543986a92658f9c8a25aacf1952b7d8c85eb0fdaa0f72f0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a45b38b16bd42a3c42e00b093d61fca8a9c5384586e4a53264c4dbc54253d2b0da894519e4dbfbb2097409baea10842b08513dbc0abdbdd6772de145c73d531c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a549952ed557912fcd8adc9a4ba496d888a58030a23269318450a41bb4111f423a3d017c22afdf0772ade1a34bf8c9e15ab09c8cdc78b85b0d24d0c19cdced79.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a7184d13ebeee35ea4952d7afcdac46f0e186f4fb4e4ce2b017d7d59cc5add665c22faf4fcb043896eaa5377dc436ff0e3da0c8a9fddc8991ee743b031761688.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/a97725c9494c98a8cbea6456e3039d3e3fa8e1ac0f099b01214c7753bf3223d41354a5ad278f214f6f0c1401826ca2ce94fb93ec419a2fa13bef1c70574b432c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/aa2fa131c53edd9f0087209b80d5c89a318e81053d71811cc2715bed8e675d843b8615f8c7e9b755d12e195c806fa23280612449d720c3f8c360ff4ed9cac145.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ab2423287a7392f2203b9e2d04d2d35c61eccfb5385bbe7a51f7be7d6382bba34d027817669a101412427c428a9e839e55c131a722e9115a217282019a23b40c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ac163c171e9ae790c33456fa87ebadaa0083c61dfd9dc697e454e1d8b1eb4e1f34e114c5233998dfabd99272ab5c14046914f8031acfaf42927deb89167beb50.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/add1d55fea513144e2eb7ec289e3d7a4d728168976bcdf56336005dff3c31693ec0e806d4489e10fdecfde6aac0bdf6f54a6231ba0f6b35e5f935a13f03527cb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ae7e6a83486eb2efc5126cbe7ec7546b7021c477419fd67fe6eabf13a1f975c5c64e7be1211524ac28b92d9eaa2485486a5c9547e0f10ac519e67d8ce14d6c68.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/af33bd6ee92e36a16440c0ce45013871902931c74345836019b9ad18d72df791d880d10e695b520374438326cf7afd719319e8ebfefeb248d313999712f7cfe5.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b08ab2951016ae9acdcd17091baea573a08c7bff903f058888918ca5b9de9eeaf302c872ce64e6d4e995b5c9aafab6a0921c16537706066cd172d0a72df008fa.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b0badfb5e7affc0d44e27ba35a47d86fde893cd7bee0cdc8e467277e143783dd3bc7bbac5c55ec341cbbf8212bc536c0c8d7e7b89de6f237e7ff0501b8413075.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b0ecc12bc9349fcbf40b7cc579fb6a50365fd659f114463aa2a448176fc583230e23251694745b7de07d5fc65e69cf6735a121ab767ac1c235034282f6cb493b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b243a0fb9ee2ca8ca39d82d8a5d1d9320555644fe8fd3375ec0aa7e7af8e6f2a94b93d20276f8d753458c189b67b44e34a3233040be7346b7732e364a208e057.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b6626a916a054753f887ff3f9b7bca34258833dd4f52d6ae8988343de15aea1b9605d394f62876ebb73f8b4048f0f47294d0c16dc47845b7912cef9e96a9b8ef.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b6f163a24a2d5279e5221770f52ef2647f6257c53f1ac04e97965527bdb006e50157ad0795b217deb30e19d27fb8bce69f96d95d65f7b9b10b1453d75b933095.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b985f390f247b8455b47a06c4b31bd6d94728eb39d4d742ee00da8bff63f47979951fd6b19f1cc438ae7426f14246bc448bf86b20fd7d9d02bfaf155fb54b5fe.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/b9f1781b3f4db782d493ab7c014c36a622cff5caf8a125020f3800f086e855d0539823285157ee700fc3c290f2a191361d0e51948e4286ee3e2f42c035f5f67e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/bcde9fce2f3aca9b9ea6682ec79a48509e5564c0d7fd2a8caf3ad592e2086d4807a5e79e7dc448b2a72bb3163c89de4934d7dbd9fd1ef8d9316cbe9f83fad740.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/bd6456430a59e4d529ff8c57ed7d3780a44ffd0f7e12cc1b61ac1d7f7e3fd2bce95e84a52debe960e5a403ed273acf54db27cf1d7aa3845bce718e735db62cfd.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/bdfc58d5b291b9fa207fd316cc2079bffe2a9a77466f12eab3b2b5f1ed98aaf40fb1c5f047eb8e903b85e885ee3cde1b600a5bfec2ba2e1a6318933c4339e52b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/be48a07ffc27633bc10a135ee263717c4f3f9fd9283850262bbd50f5c1eaa0bd040d8d24cd5d73691499597cc87783eb98e596cda934c13a200c4a7e2975eec9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/bf7c7df89b610f7b056b0ae44846f92eda92836adf4912b128f646986d99ab635b9462bd9cd46819487937fb0a982f0c0f7e22a3ee8b7eaa31a03015df8eab7c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c19e565662d36ab52cdb07121a207da0a8c05e4967ae007776728c19b674c8b12da1d793b06a0e2712a42856f1111713113b31c6daac6cdbef93c7cf8feac093.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c1af3a4ea6c7b2deb83bf019679c7e2770b1f0fad82b0f4f03e8267fc6d57c7e5f9a380756860ecb597c91c28f45522d035426fe3ddb4af1b02b74388572ddb9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c1d89bbc25cc967ef74505d7c43a7455d74e8bf41b1930cd65388b1299c42874cbf552fdc06e8d7a3631e626d78e9f20e750da224eee692d51d34056b4754d25.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c238a4a00f613d56a554f87b8c3ba2836954962520b4e1ff49cd7dfa2a79bb9e33726d7da0347b781323e14dd27a1416701a027a038026bf92d881c971875d83.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c24066be648b2038aaba60a9664d027c1a048ae424feac29abe9462839a442c62bf25d20297560dd357a285f9ece7df2317b4c0ba1952fa51bb8643eb863089a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c270c08fdff94ba6d3f8c25f81a31eab5979e1eb62ce1be533f5e8947a950ab21c952e8a63f501d9e84f0654629dc3b4d9fab817e3510deab4ba362989c0e9c6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c2f9507af48e151e9b1be7e31c339f865021504194f95865adb2d8f909d863eb3acc1cf20e0a12291efb05925eaa1ae7ec39563691b7902c4b663626ccfeec9e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c37df0c2c6243d658cf8b11f705d5b1924f000efbf3f9b6f02f7956e39c44e4a476b4094ee060a2b70a442bf4eb77472d0cfb1608c0399f6844a4fe5c5a2ab9f.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c3ed0abd96f2c494e9a4b4b34cd23c2eba8b84564d58e536654f64a8ca4525ba03f33c473f442cac3207818497aaff7de97893fd0de93ccb225b1e8f926b82cb.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c71e719e00abe16e50ab933a6575cb89ab7b839d6650e699de9238f774102aae415da4335527e4eb3b13215f6d4e650782e981583ba8c16e32fcff0c69339f39.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/c80cd915624f8c71ee6b14f562ccbba052e74c51d881f05d0d0bedae3e323e04dd991cca5c9aa8caa11cb4515f24572efac9a7ac4b0c28bcb628f4fe80d6cf3c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ca2a421458e1fd7ecfe8702853f95f6be59fd393aaad6f92b9ae5b168c30d8fb3b7524361b90d3d2888217f652ddcae5afc44d174ed052477708959271641cee.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ca45ec1e00232357d9ae9b055120edfe5d36e1085cbe10387251aeddb7aae63cb5e8498a14395edab0087c11c657af0927fd220ff65685d8d94347b8392a1fb5.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ca91f0fda0ba75aac56f0d9ccb623ecae06149412686c33d8e13a586ce87edaae16423a78b1226c69916e007dbe2449a25defea5df4188e159d7286880df5789.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ce8cc8ab9f43181206aa86b0f3bcb895448959f9ddd97a00ba6f930db12fcbcb58a087fed8ca940bef03d9066444642253f1588421450e1683910bb98aebb9af.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/cee41b39dd435ed6fd0b829872b92696367a6ab7e4674e4575d7cd94570c74cf8e8f72760fd4880a9d684fffc32ffac08cb9cea8ace60b37fb2c6802497f3f0c.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/cf2a02fc4d66c68d2294cd052aa3dce84218912214906ea88af1e279a9e4e5261d30f0149ec02e454ed9b8d0a3e9f56cc21a217086062109874a14378f8040fd.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d03cd453a6b9e6ecbc064e5ee9daf766ec5fadd3b0fe390c80f2ea366d18a1a7de441a884641caa2df0513bd57da27ce0827eb772109ef31877173912fea2af0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d1e08e646d26e0bf8f6f1faf8b2d7cc1c2843845796dac1984a2bd9fd6e013636453721e4c28533c4b357be0f343e6141d05f99fda4ac3920a34f1fb1ca235b0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d288ed230b0d8901a8753a7341da6cd70347fdfd9a36f1418d706f4bc2bcaa510a962715d28f532a4df61d4ec3373aca80c1c2e920905326458493ea03696f14.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d4074fddd011fb86dc64600234674c78b32b661c4b3d352e014709ce4acfa87ed38a85ebd86a00daeda66c2932548613e0403bca2975f8fef5cf0d8d5ce5c314.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d49606ec118d97098bafa202a673c61b10bdd7c92208deae2a63867fb0ce5e580c0048725cddd61407d2dd15876db9a9175c5cc3b5bfaabc82333629cf69f2fa.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d89de3e749b155bb675d55f3a7ccbfc9104f0df0c9e02ce4c6c666c0ddb053a70d64c5d5e74498434684bf81d7932cca852d303a5370d0b4338a49974346f147.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/d8ae62eaa6200089796b221ff613aa86e1ca04c07619b20092c77d8818d500d815b54f2153f0213a008ad7b8a9afa400cbc206f1a49b6ebdd66825f49e2cb072.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/dbba1486e7467024108a1d11cb7c258b4fee82bd844a49a2326b104b2a6350c10866abcb68753e9266f7a82d536a36da257014c702d8a457f552d6af53b3441e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/dc690166f66cf064aa895253cf73b7375e65bb2dc0c7aa46ebf344e25942d0536d63638bfab14dac41700e262c5fc87de5143c82fc131cf4e1d32c7276e2a37a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/dcdb2cb9c7b8f26d6cfb4d7bbc3b03ef0d620bf6b7ba700060d047b3fd39f56274e2eb60d2a77d358db4cf118d434d22a81d0b6d15c5b6bf404f4109c6f9792b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ddac968d3ab069c3a4c93d3bd39b1dd7e03a3f347ebcf34dde4a010bb34eefed067b84518024a22ff7ea6501756f57a895ff59c1455640f9b3f4d9b6efc27957.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/de25ce560c8892979598a786af3774ab3940c8aa949a4324f93837ab0951ee78572a3dfac5665fadb80179d5fbd52c5d88cdea2d84691f94b6ac0c0954236de4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/deb08bcde537e68d2be46297c44538c64190ed5968ef6cade30b688d120cf41fa5627ff354c2f2ddc77743bfbb74047419deb0f5abaaee0582a69fcacf9cab40.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/deceb249fe83393b8e498ac983dd7989d1a40e988388965c56b493e1ee8c5a7d7def014be92b2571bcccf5f4e9f4bc2fec824d653b2d26b1f23ee8e1dd053d13.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/df2cf07a4bd86cea38a1909e9f783bc28e643e5ba4f34f62ba662c4d08c20753e925a9c16293ce8d17530ceb7fe65432a14581c7fdcc24763508faf0a18cea78.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e00274e4f4fb186b81cdb908e5c5d3ec57f0f9696e2373a473e383b8568fe2a025fff4e88accb46f9a5082072635519dc1ce8cd2ac721b8c8e85f29910108792.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e0f4f05a0aeddc26121a369f914aa0f9027a2ab2f48b8dbe82a42d89e5077741f332227339c953f39e3a06346c7ea044cd39627930101c6a5cdb2d3ada3672d1.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e0fe5d5ec5cac603a1f0fbc72c829b32c8bd22e162f40e375cca5deec4d5c1b0f8de677873362215543f51321cb5a14d5112a6d73003ca87387c0298692fb60d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e38f33ac48c40300f47754c99877f1f8c0bc074bed20584f4a67603834d34fe4576a8068961d351bb71defa8839968cf373c5fbcedff21742a8b1b5d4777c321.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e3acddab0303c0cd018329bee0360026b92823ae8c657cbba2e600ecb4d8703fd58ded26be78a2f39a2a71cb156c6b558a200f6055c1afea12f726ea1ad047ac.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e400c7fc50922c9985a15a862c4d6621dec9a3a138f28c4b30620d4f88807acdb017e14bb415b1590d5e10a80fe2caa0eb12dc2ec8b44e897db16520d0655253.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e47c2496f4be6a863d9f1e6344f50d754fa7156070fdfefa5e40bfe953a8d40f8981908f9cc834fa02a615e0a89f8981e7adbbf0c48569818870c0b36d856271.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e4c196d19b4a53dcd30f21f2d35bfcfa450f91e45481c897c59f86c9902c029096f863eee10466c36d63a357bdf767502bbf87cb8864fcf42c4a903eee306e5a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e61a1a5328736c88c2d79b81268f9eed0e4cf453883c8e46b58c008b397ee973aeefd1894c11c45beb7634af63ed98a85f0af1623566b21bf1362682584edbda.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e6de7a2ce4afb17786560f70d946d6683352db55313d48069808c0a6c81ef320ed49508b70d6658fd0fd68ba3fda8db492e8ad9335beb48180a96db2cbdc850e.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e70d8ff7eef572a66cafb100b9abc486c25372437936486c052a9324599d975d06771566d786b7f1e71eba8e47e96df1c69b1387197fbbe3e58572e7ac9d7205.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e71ac066822513e863ecc84e31de6a73fee9b897a174f6de236b8b0f27e0d507890f6f7e79aed32801935d1c846354718ac20a8596ac4cb72a466e5b2e69f75d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e778a767bc3c6767ad91533c6954c554f54139753e3d4713c0b290bd800c8dba42408c345a10bf2aec894b51c1d668c009275fcb392c0ddf03a978367aa425b3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e778f59d7e62d8e26458d5bf48bed4b375cb177edd211b8882c16a272f638837dccd239558f40008e2cc65c3e186dc08fc560256aa94273ab7cf76e94f999fec.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e79295af56bb8dbcce2cef505aa0d96ca8ba9f793ef7fe467d7e4cf86ef8d342efa28fbc56677d0e782e9069773d38628d711b35c11e449f25685fa27344dfde.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e9822dc7dcf7575102bdac24e3c9a09b181dea508e4589c07a40537d1f54db4714893649857baf43db246e049a0a740db1b6c3b460a4eabf0adc979e07c5c3a4.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e996fc648abb6958fdea0986b5ef2678a1ccc4855d257f5c895eb050dff2b49d8fb0239300028771bb6455bcd4a9a659462d1eb43e7d0b490f73b8003d827564.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/e9d3650c97255bd53ae52ba9f7d287aa8dac3dbfbdef80e22676ec34b3a396d3560e56175fb78f3bd82815ced9b90c5333f46a1995a24b5ff39e8385772408e9.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ea564fd97b7c6f356f80485b2c6a8b86a945e97fe7822ab572994ae1558a1997233021b82f49cc0e7b8e7fa9bda0f1721624e02430cd0b25461bebb8c32f3e79.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ea5955e0ec382086cfbabb4ea1a526572afef43abeafd8148709a7bde472353253ee06346d542979246bcb56d357a210caf3732a26bc1e8ca76ea6020de5978a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/eade22e7a0a45fefffe1136c32f1dbfa7ab5e7d90e6894620d8d3fafa64064831b5605c96dcc727ecac87aedd7a37eeb5bcd43e6631c46942057d4a504932a88.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/eb66c531584a8ac0cfb2106b955c7eb15b2f7415834ca700ad640e3f7f025a9e5e19fa8e9f87d3d32838852c62ede1339c5cc3b465ebcb34f6e06a2fcf6896e6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ed6f024295f460403b392fc26d39f68645ea5ca387f006257158a3398dd574eed421fd245cad56764584726437e645903d499cf3e212ca8b52e5a489e013ddc0.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/eddc658faf003155f2f2fee8f6937c2e9b5cc775ade0ae1b27aa893cb7c7aa059fd829f4d1dae623bf5d1648dd8148e4acfca1443f2bb74e7b4d4ce894cea3a3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f0d56c58362db5917ad3dd90e94a6cf751255d615243dbc442f78b137ed893e273624dcdb78d834358d29c36803fa8a035e75db901da12586809e7bc4e7be93d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f27544fdc1665ce8f659e4d9c42f50ec7861398f404ae2ae6d32cc2dcf9f441168467c8d2c22f7e2347f133436cf1da56a2894e36140191f1122befc7c0883f6.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f3322eb79a2c2d774e1d6c8a33d87521232714eb62021e6c2c076af45f006af13af6145c53abf49aba67d59a6565b589a7ffe28bfb85c02b368f16311295c638.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f40efc621b40db70ec5fe6017132f88a610cb8aec09608b84fca9519463a5b957a78e3c3201687fae36c0a9e9723b875f0d32017c081cdef921a2c1f60cb9e29.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f443da504214b132096f9584e21909a13eee492c819a574324d7604675980736d12acfbfb87c96be40e8437f482732ce5beabe229e4dfbda30135d38ecd44013.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f573f99e88c1eef74feb4ccf9c08e345d6caad1de006f2c90288774d22a012b79155cf86c375fbf39a200c9a34e5d6bf23134f3abd1a3f863ded1bef59a9fd9b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f5d0489ae949e48bf34b5b55825f5052504bc2cec59fe5a8736f177fb2d4d2e45b4b5641d6a7b6702d7fcf915fccf192c22756ad9c72f0c32a5d506916d6c89b.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f5fd637371a3dedcf72964036a0ad4d667455d944a9a0175b2a5274e5e753a3847cce71110e7822119f82e7a12aa75bf8e4ab1165ed6b9b5d89c7047bda6528a.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f78322c14738aa111a403b9a0a88f81f9476b09bd932eb32f1ed147ca2196a8d91d46d54a80625a4f35d8f3da7721a97d175b5ab88ad845a577ef647ce9c5533.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/f933ecc4e79d9db5682b598ef5a816f313663d5ded1a1161ac77c4d10b4b5b3bca3e9defbb399012d516487fe5ed888f25374a7811870376aebf96ebe005abd3.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ff0a3302b59b7e5c4d9157df70385fc76d79e2707dbee739589c9b1a3636ab1716344bd5bb177cd540542720af0b3200038a1af62ceb2e3180e4d428c9a5f19d.json.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.awcache/ffa9e16cc1b36019c8ec557271a23c4b9fea9dd56ce68a57b2c0b5d076736b6e866d856e1233b8ce1e3b7906fb750ded1d1f80473a12b746760de171e5b4c6b3.json.gzip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/favicon-16x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/favicon-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/logo-30x30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/css/custom-bootstrap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/browserconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/assets/images/icons/manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/app.js" afterPath="$PROJECT_DIR$/dev/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/app.js.map" afterPath="$PROJECT_DIR$/dev/app.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/arrhythmia.js" afterPath="$PROJECT_DIR$/dev/arrhythmia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/arrhythmia.js.map" afterPath="$PROJECT_DIR$/dev/arrhythmia.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/axis.js" afterPath="$PROJECT_DIR$/dev/axis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/axis.js.map" afterPath="$PROJECT_DIR$/dev/axis.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/index.html" afterPath="$PROJECT_DIR$/dev/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/vendor.js" afterPath="$PROJECT_DIR$/dev/vendor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/vendor.js.map" afterPath="$PROJECT_DIR$/dev/vendor.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.html" afterPath="$PROJECT_DIR$/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.scss" afterPath="$PROJECT_DIR$/src/app/app.component.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.html" afterPath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.html" afterPath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/index.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html" afterPath="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts" afterPath="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html" afterPath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.ts" afterPath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/index.component/index.component.html" afterPath="$PROJECT_DIR$/src/app/common/index.component/index.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/index.component/index.component.ts" afterPath="$PROJECT_DIR$/src/app/common/index.component/index.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.html" afterPath="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.ts" afterPath="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.html" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.spec.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.html" afterPath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.html" afterPath="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.html" afterPath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.html" afterPath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -277,101 +68,46 @@
       <file leaf-file-name=".todo-list.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.todo-list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="391">
+              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <file leaf-file-name="app.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrhythmia_settings.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
               <folding>
-                <element signature="e#11#52#0" expanded="true" />
-                <element signature="e#337#393#0" expanded="true" />
-                <element signature="e#440#487#0" expanded="true" />
-                <element signature="e#845#898#0" expanded="true" />
+                <marker date="1503952262986" expanded="true" signature="526:659" ph="{&quot;name&quot;: 'accuracy'...}" />
+                <marker date="1503952262986" expanded="true" signature="1043:1181" ph="{&quot;name&quot;: 'coefficient'...}" />
+                <marker date="1503952262986" expanded="true" signature="1563:1722" ph="{&quot;name&quot;: 'difference'...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
+      <file leaf-file-name="axis_settings.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="64">
+              <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
               <folding>
-                <element signature="e#67#152#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculator.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#11#52#0" expanded="true" />
-                <element signature="e#344#413#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/axis-heart/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-              <folding>
-                <element signature="e#11#52#0" expanded="true" />
-                <element signature="e#341#410#0" expanded="true" />
+                <marker date="1503952970603" expanded="true" signature="562:695" ph="{&quot;name&quot;: 'accuracy'...}" />
+                <marker date="1503952970603" expanded="true" signature="1093:1232" ph="{&quot;name&quot;: 'maxSum'...}" />
+                <marker date="1503952970603" expanded="true" signature="1635:1768" ph="{&quot;name&quot;: 'maxWave'...}" />
               </folding>
             </state>
           </provider>
@@ -406,57 +142,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/calculator.component/calculator.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/axis_settings.component/axis_settings.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/arrhythmia.component/arrhythmia.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/arrhythmia.component/arrhythmia.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/axis_settings.component/axis_settings.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/arrhythmia_settings.component/arrhythmia_settings.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/arrhythmia_settings.component/arrhythmia_settings.component.html" />
-        <option value="$PROJECT_DIR$/src/app/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/index.component/index.component.html" />
-        <option value="$PROJECT_DIR$/src/app/index.component/index.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/index.component/index.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq_list.component/faq_list.component.html" />
-        <option value="$PROJECT_DIR$/src/app/calc_wrapper.component/calc_wrapper.component.html" />
-        <option value="$PROJECT_DIR$/src/app/services/app_state.service.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq_list.component/faq_list.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/calc_wrapper.component/calc_wrapper.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/calc_wrapper.component/calc_wrapper.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/app_state.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq_list.component/faq_list.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq.component/faq.component.html" />
-        <option value="$PROJECT_DIR$/src/app/app.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq.component/faq.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/faq.component/faq.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/app.ts" />
         <option value="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/common/faq.component/faq.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/common/faq.component/faq.component.ts" />
         <option value="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts" />
         <option value="$PROJECT_DIR$/src/app/common/settings_field.component/settings_field.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/common/sum_field.component/sum_field.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/index.ts" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/axis-heart/index.ts" />
-        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" />
-        <option value="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html" />
         <option value="$PROJECT_DIR$/src/app/app.routes.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/.todo-list.json" />
-        <option value="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" />
+        <option value="$PROJECT_DIR$/src/app/axis-heart/index.ts" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.ts" />
+        <option value="$PROJECT_DIR$/.todo-list.json" />
+        <option value="$PROJECT_DIR$/src/app/vendor.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/assets/css/custom-bootstrap.scss" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/common/index.component/index.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/common/index.component/index.component.html" />
+        <option value="$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html" />
+        <option value="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html" />
+        <option value="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/faq.component/faq.component.html" />
+        <option value="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.html" />
+        <option value="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.html" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.html" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.html" />
       </list>
     </option>
   </component>
@@ -595,7 +331,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="is-arrhythmia" />
+              <option name="myItemId" value="axis-heart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="axis-heart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="axis_settings.component" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -714,12 +476,12 @@
       <workItem from="1503567584070" duration="19275000" />
       <workItem from="1503641919215" duration="27025000" />
       <workItem from="1503756991159" duration="10755000" />
-      <workItem from="1503822159684" duration="27750000" />
+      <workItem from="1503822159684" duration="51911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114098000" />
+    <option name="totallyTimeSpent" value="138259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
@@ -780,186 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/services/axis_calculator.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/services/axis_calculator.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/helpers/validators.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#69#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/app_state.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/app_state.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/btn_plus.component/btn_plus.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/btn_plus.component/btn_plus.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/faq.component/faq.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/faq.component/faq.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/settings_field.component/settings_field.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/settings_field.component/settings_field.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/sum_field.component/sum_field.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/sum_field.component/sum_field.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -969,38 +551,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/sum_field.component/sum_field.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1028,48 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/faq.component/faq.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1078,14 +586,6 @@
             <element signature="e#11#52#0" expanded="false" />
             <element signature="e#175#244#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1226,40 +718,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="289">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
-            <element signature="e#11#52#0" expanded="true" />
-            <element signature="e#341#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#11#52#0" expanded="true" />
-            <element signature="e#344#413#0" expanded="true" />
+            <element signature="e#67#152#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1269,53 +733,350 @@
         <state relative-caret-position="389">
           <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#11#52#0" expanded="true" />
-            <element signature="e#337#393#0" expanded="true" />
-            <element signature="e#440#487#0" expanded="true" />
-            <element signature="e#845#898#0" expanded="true" />
+            <element signature="e#11#52#0" expanded="false" />
+            <element signature="e#337#393#0" expanded="false" />
+            <element signature="e#440#487#0" expanded="false" />
+            <element signature="e#845#898#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#11#52#0" expanded="false" />
+            <element signature="e#344#413#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/services/arrhythmia.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="74" column="74" lean-forward="false" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/assets/css/custom-bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/vendor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/index.component/index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/not_found.component/not_found.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/faq.component/faq.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/faq.component/faq.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/calc_wrapper.component/calc_wrapper.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1069">
+          <caret line="172" column="9" lean-forward="true" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.todo-list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="391">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#67#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="287">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia.component/arrhythmia.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+          <folding>
+            <marker date="1503952262986" expanded="true" signature="526:659" ph="{&quot;name&quot;: 'accuracy'...}" />
+            <marker date="1503952262986" expanded="true" signature="1043:1181" ph="{&quot;name&quot;: 'coefficient'...}" />
+            <marker date="1503952262986" expanded="true" signature="1563:1722" ph="{&quot;name&quot;: 'difference'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+          <folding>
+            <marker date="1503952970603" expanded="true" signature="562:695" ph="{&quot;name&quot;: 'accuracy'...}" />
+            <marker date="1503952970603" expanded="true" signature="1093:1232" ph="{&quot;name&quot;: 'maxSum'...}" />
+            <marker date="1503952970603" expanded="true" signature="1635:1768" ph="{&quot;name&quot;: 'maxWave'...}" />
+          </folding>
         </state>
       </provider>
     </entry>

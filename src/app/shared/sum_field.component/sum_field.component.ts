@@ -1,5 +1,5 @@
 // angular
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // components
 import { BtnPlus } from "../btn_plus.component/btn_plus.component";
@@ -15,6 +15,7 @@ export class SumFieldComponent {
   @Input() maximum: number;
   @Input() minimum: number;
   @Input() data: {[s: string]: string};
+  @HostBinding('class.form-group') formGroup: boolean = true;
 
   constructor () {}
 }

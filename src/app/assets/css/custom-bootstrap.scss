@@ -1,0 +1,129 @@
+@import "../../../app/assets/css/custom-bootstrap";
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+}
+
+button {
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-size: inherit;
+}
+
+input {
+    font-family: inherit;
+    text-transform: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+textarea::-moz-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+textarea:-ms-input-placeholder {
+    color: inherit;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+header,
+footer,
+article,
+section,
+picture {
+    display: block;
+}
+
+fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+mark {
+    background-color: transparent;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}

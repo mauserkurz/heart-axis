@@ -58,6 +58,7 @@ describe ('ArrhythmiaComponent', () => {
                 max: 3000,
                 init: 1000
               },
+              rateCoefficient: 60000,
               moreThenOnly: true
             };
 
@@ -149,6 +150,14 @@ describe ('ArrhythmiaComponent', () => {
       });
     });
 
+    describe('getHeartRate', () => {
+      it ('should call getHeartRate method of service', () => {
+        spyOn (service, 'getHeartRate');
+        component.getHeartRate();
+        expect (service.getHeartRate).toHaveBeenCalled ();
+      });
+    });
+
     describe ('displayValue', () => {
       it ('should output error when form is invalid', () => {
         component.pp1.setValue(3001);
@@ -161,6 +170,12 @@ describe ('ArrhythmiaComponent', () => {
         component.pp2.setValue (1000);
         component.displayValue ();
         expect (component.output).toEqual ('20 %');
+      });
+
+      it ('should call getHeartRate method of component', () => {
+        spyOn (component, 'getHeartRate');
+        component.displayValue();
+        expect (component.getHeartRate).toHaveBeenCalled ();
       });
     });
 

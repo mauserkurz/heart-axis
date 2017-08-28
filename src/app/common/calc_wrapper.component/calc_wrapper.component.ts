@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, HostBinding } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { AppState } from '../../services/app_state.service';
 
@@ -8,6 +8,7 @@ import { AppState } from '../../services/app_state.service';
 })
 
 export class CalcWrapperComponent {
+  @HostBinding('class.container') container: boolean = true;
   title: string;
   calculatorType: string;
 

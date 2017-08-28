@@ -1,5 +1,5 @@
 // angular
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, HostBinding } from "@angular/core";
 import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/forms";
 // services and helpers
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
@@ -17,10 +17,12 @@ export class ArrhythmiaComponent implements OnInit, OnDestroy {
   arrhythmiaForm: FormGroup;
   pp1: AbstractControl;
   pp2: AbstractControl;
+  heartRate: number[];
   output: string;
   useSeconds: boolean;
   isArrhythmia: boolean = false;
   usePercentage: boolean;
+  @HostBinding('class.container') container: boolean = true;
 
   constructor (
     fb: FormBuilder,
@@ -98,6 +100,7 @@ export class ArrhythmiaComponent implements OnInit, OnDestroy {
       let result: number = this.getValue();
 
       this.output = `${result} ${this.usePercentage ? '%' : 'мс'}`;
+      this.heartRate = this.getHeartRate ();
     }
   }
 
@@ -108,5 +111,13 @@ export class ArrhythmiaComponent implements OnInit, OnDestroy {
 
     this.pp1.reset (this.arrhythmiaModel.settings.interval.init);
     this.pp2.reset (this.arrhythmiaModel.settings.interval.init);
+  }
+
+  getHeartRate (): number[] {
+    return this.arrhythmiaModel.getHeartRate(
+      this.pp1.value,
+      this.pp2.value,
+      this.isArrhythmia
+    );
   }
 }
