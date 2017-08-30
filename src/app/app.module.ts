@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // services
 import { AppState } from "./services/app_state.service";
 import { routes } from "./app.routes";
@@ -30,6 +31,7 @@ import { IsArrhythmiaModule } from "./is-arrhythmia/index";
     AxisHeartModule,
     IsArrhythmiaModule,
     RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
   ],
   bootstrap: [AppComponent],
   providers: [

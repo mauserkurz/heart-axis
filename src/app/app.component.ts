@@ -1,5 +1,7 @@
 // angular
 import { Component, HostBinding, ViewEncapsulation, } from "@angular/core";
+// services
+import { fadeIn } from "./services/animations";
 
 @Component({
   selector: 'app',
@@ -8,6 +10,10 @@ import { Component, HostBinding, ViewEncapsulation, } from "@angular/core";
    './app.component.scss'
   ],
   encapsulation: ViewEncapsulation.None,
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class AppComponent {

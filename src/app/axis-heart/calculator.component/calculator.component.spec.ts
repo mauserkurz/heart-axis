@@ -1,11 +1,15 @@
+// angular
 import { Directive, Input } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { By } from '@angular/platform-browser';
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
-import { CalculatorComponent } from './calculator.component';
 import { Observable } from 'rxjs';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// services and helpers
 import { AxisCalculator, axisCalculatorParams } from "../services/axis_calculator.service";
 import { AppState } from "../../services/app_state.service";
+// components
+import { CalculatorComponent } from './calculator.component';
 
 @Directive({
   selector: 'sum-field'
@@ -36,7 +40,7 @@ describe ('CalculatorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule, ReactiveFormsModule, ],
+      imports: [ FormsModule, ReactiveFormsModule, BrowserAnimationsModule, ],
       declarations: [
         CalculatorComponent,
         MockSumField,
@@ -128,7 +132,7 @@ describe ('CalculatorComponent', () => {
           component.sumIII.setValue(0);
           fixture.detectChanges();
           expect (component.calculatorForm.valid).toBeFalsy ();
-          expect (element.querySelector ('.form-error').innerHTML).toContain (`Все суммы не должны быть равны нулю`);
+          expect (element.querySelectorAll ('.form-error')[1].innerHTML).toContain (`Все суммы не должны быть равны нулю`);
         });
         it ('when sumI or sumIII values not zero then form valid and no error showed', () => {
           component.sumI.setValue(1);
@@ -144,7 +148,7 @@ describe ('CalculatorComponent', () => {
           component.qs3.setValue(5);
           fixture.detectChanges();
           expect (component.calculatorForm.valid).toBeFalsy ();
-          expect (element.querySelector ('.form-error').innerHTML).toContain (`Все суммы амплитуд не должны быть равны нулю`);
+          expect (element.querySelectorAll ('.form-error')[1].innerHTML).toContain (`Все суммы амплитуд не должны быть равны нулю`);
         });
         it ('when r1 - qs1 or r3 - qs3 values is not zero form valid and no error showed', () => {
           component.r1.setValue(2);
@@ -259,17 +263,19 @@ describe ('CalculatorComponent', () => {
     });
 
     describe ('displayValue', () => {
-      it ('should output error when form is invalid', () => {
+      it ('should output error when form is invalid, and set formInvalid as true', () => {
         component.sumI.setValue(21);
         component.displayValue ();
-        expect (component.outputValue).toEqual ('Форма заполнена не корректно');
+        expect (component.formInvalid).toBeTruthy ();
+        expect (component.outputValue).toEqual ('ERROR');
       });
 
-      it ('should output error when service return NaN instead number', () => {
+      it ('should output error when service return NaN instead number, and set formInvalid as true', () => {
         component.sumI.setValue (0);
         component.sumIII.setValue (0);
         component.displayValue ();
-        expect (component.outputValue).toEqual ('Форма заполнена не корректно');
+        expect (component.formInvalid).toBeTruthy ();
+        expect (component.outputValue).toEqual ('ERROR');
       });
 
       it ('should output 120 degries when all correct', () => {
@@ -323,10 +329,11 @@ describe ('CalculatorComponent', () => {
       reset = element.querySelector ('[type="reset"]');
     });
 
-    it ('should on input change rewrite output', () => {
+    it ('should on input change rewrite output and show 1 error messages', () => {
       component.sumI.setValue ('.');
       fixture.detectChanges();
-      expect (output.innerHTML).toContain ('Форма заполнена не корректно');
+      expect (element.querySelectorAll ('.form-error').length === 1).toBeTruthy ();
+      expect (output.innerHTML).toContain ('ERROR');
     });
 
     it ('should on reset click call reset method', () => {

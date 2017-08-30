@@ -5,12 +5,17 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/fo
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
 import { AxisCalculator } from "../services/axis_calculator.service";
 import { AppState } from "../../services/app_state.service";
+import { fadeIn } from "../../services/animations";
 // components
 import { SettingsFieldComponent } from "../../shared/settings_field.component/settings_field.component";
 
 @Component ({
   selector: 'axis-settings',
-  templateUrl: './axis_settings.component.html'
+  templateUrl: './axis_settings.component.html',
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class AxisSettingsComponent implements OnInit, OnDestroy {
@@ -122,7 +127,7 @@ export class AxisSettingsComponent implements OnInit, OnDestroy {
     this.accuracy.reset (this.axisCalculatorModel.settings.accuracy.default);
     this.maxSum.reset (this.axisCalculatorModel.settings.maxSum.default.max);
     this.maxWave.reset (this.axisCalculatorModel.settings.maxWave.default.max);
-    this.state.toggle ('useSums', true);
+    this.useSumsField.reset (false);
     this.setSettings ();
     this.formChanged = false;
     this.showResult ('сброшено');

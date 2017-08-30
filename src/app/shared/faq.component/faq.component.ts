@@ -1,10 +1,17 @@
+// angular
 import { Component, HostBinding } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+// services and helpers
 import { AppState } from '../../services/app_state.service';
+import { fadeIn } from "../../services/animations";
 
 @Component ({
   selector: 'faq',
-  templateUrl: './faq.component.html'
+  templateUrl: './faq.component.html',
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class FaqComponent {

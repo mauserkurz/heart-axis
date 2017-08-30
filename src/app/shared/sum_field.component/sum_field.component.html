@@ -1,4 +1,11 @@
-<label [innerHTML]="data.title" for="{{ this.data.name }}"></label>
+<label
+    [innerHTML]="data.title"
+    [for]="data.name"
+    data-container="body"
+    data-toggle="popover"
+    data-placement="top"
+    [attr.data-content]="data.popover">
+</label>
 <div class="form-label">
     <btn-plus [input]="input" [step]="step"></btn-plus>
     <input name="{{ this.data.name }}"

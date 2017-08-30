@@ -3,8 +3,8 @@ input.ng-invalid {
     border: 1px solid crimson;
     box-shadow: 0 0 10px 0 crimson;
 }
-.navbar-inverse .navbar-nav > .nav-item > .nav-link {
-    color: #ffffff;
+.form-label input[type="number"] {
+    margin: 0 .6em;
 }
 .invalid-feedback,
 .form-group,
@@ -24,6 +24,18 @@ input.ng-invalid {
 }
 .form-result {
     padding: .6em 0;
+}
+.form-alert {
+    margin: .6em 0;
+}
+.calculator-slide {
+    height: 10vw;
+    background-color: darkgrey;
+}
+@media screen and (max-width: 767px) {
+    .h1-title {
+        font-size: 2.25rem;
+    }
 }
 
 // typography

@@ -13,8 +13,9 @@
                     [minimum]="axisCalculatorModel.settings.accuracy.min"
                     [data]="{
         'name': 'accuracy',
-        'title': 'Точность - количество знаков после запятой.',
-        'output': 'Точность - '
+        'popover': 'Точность - количество знаков после запятой.',
+        'output': 'Точность ',
+        'outputAfter': ' знака'
       }">
             </settings-field>
             <settings-field
@@ -26,8 +27,8 @@
                     [minimum]="axisCalculatorModel.settings.maxSum.min"
                     [data]="{
         'name': 'maxSum',
-        'title': 'Максимальная алгебраическая сумма зубцов.',
-        'output': 'Максимальная сумма - '
+        'popover': 'Максимальная алгебраическая сумма зубцов.',
+        'output': 'Макс. сумма '
       }">
             </settings-field>
             <settings-field
@@ -39,8 +40,8 @@
                     [minimum]="axisCalculatorModel.settings.maxWave.min"
                     [data]="{
         'name': 'maxWave',
-        'title': 'Максимальная амплитуда зубцов.',
-        'output': 'Максимальная амплитуда - '
+        'popover': 'Максимальная амплитуда зубцов.',
+        'output': 'Макс. амплитуда '
       }">
             </settings-field>
             <div class="form-check">
@@ -50,10 +51,10 @@
                             class="form-check-input"
                             type="checkbox"
                             [formControl]="useSumsField">
-                    Использовать амплитуды отдельных зубцов
+                    Использовать амплитуды
                 </label>
             </div>
-            <div class="form-alert alert alert-info" role="alert">
+            <div class="alert alert-info" role="alert">
                 <span class="use-sums-state"
                       *ngIf="useSums">
                   Расчитывать используя суммы амплитуд QRS

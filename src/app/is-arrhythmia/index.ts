@@ -10,6 +10,7 @@ import { FaqComponent } from "../shared/faq.component/faq.component";
 import { ArrhythmiaComponent } from "./arrhythmia.component/arrhythmia.component";
 import { ArrhythmiaSettingsComponent } from "./arrhythmia_settings.component/arrhythmia_settings.component";
 import { SharedModule } from "../shared/";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 const routes: Routes = [
   { path: 'calculator', component: ArrhythmiaComponent },
@@ -37,7 +38,7 @@ const routes: Routes = [
           },
           accuracy: {
             min: 0,
-            max: 15,
+            max: 10,
             init: 2
           },
           interval: {
@@ -58,7 +59,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
   ],
 })
 

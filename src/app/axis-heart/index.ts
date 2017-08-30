@@ -10,6 +10,7 @@ import { FaqComponent } from "../shared/faq.component/faq.component";
 import { CalculatorComponent } from "./calculator.component/calculator.component";
 import { AxisSettingsComponent } from "./axis_settings.component/axis_settings.component";
 import { SharedModule } from "../shared/";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 const routes: Routes = [
   { path: 'calculator', component: CalculatorComponent },
@@ -27,7 +28,7 @@ const routes: Routes = [
         const axisCalculatorSettings: axisCalculatorParams = {
           accuracy: {
             min: 0,
-            max: 15,
+            max: 10,
             default: 2,
           },
 
@@ -62,7 +63,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
   ],
 })
 

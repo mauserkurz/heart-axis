@@ -5,12 +5,17 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/fo
 import { verifyNum, checkMinimum, checkMaximum, allValuesNotZero, sumOfValuesNotZero } from "../../helpers/validators";
 import { AxisCalculator } from "../services/axis_calculator.service";
 import { AppState } from "../../services/app_state.service";
+import { fadeIn } from "../../services/animations";
 // components
 import { SumFieldComponent } from "../../shared/sum_field.component/sum_field.component";
 
 @Component ({
   selector: 'calc',
   templateUrl: "./calculator.component.html",
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class CalculatorComponent implements OnInit, OnDestroy {
@@ -23,6 +28,7 @@ export class CalculatorComponent implements OnInit, OnDestroy {
   qs3: AbstractControl;
   outputValue: string;
   useSums: boolean;
+  formInvalid: boolean = false;
   @HostBinding('class.container') container: boolean = true;
 
   constructor (
@@ -161,18 +167,21 @@ export class CalculatorComponent implements OnInit, OnDestroy {
 
   displayValue (): void {
     if (this.calculatorForm.invalid) {
-      this.outputValue = 'Форма заполнена не корректно';
+      this.formInvalid = true;
+      this.outputValue = 'ERROR';
     } else {
       try {
         let result: number = this.getValue();
 
+        this.formInvalid = isNaN(result);
         if (isNaN(result)) {
-          throw new Error ('result is not a number');
+          this.outputValue = 'ERROR';
         }
 
         this.outputValue = `${result}°`;
       } catch (error) {
-        this.outputValue = 'Форма заполнена не корректно';
+        this.formInvalid = true;
+        this.outputValue = 'ERROR';
       }
     }
   }

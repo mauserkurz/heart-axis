@@ -1,10 +1,14 @@
+// angular
 import { Directive, Input } from '@angular/core';
-import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { By } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
-import { ArrhythmiaComponent } from './arrhythmia.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// services and helpers
 import { ArrhythmiaService, arrhythmiaServiceSettings } from '../services/arrhythmia.service';
 import { AppState } from "../../services/app_state.service";
+// components
+import { ArrhythmiaComponent } from './arrhythmia.component';
 
 @Directive({
   selector: 'sum-field'
@@ -30,7 +34,7 @@ describe ('ArrhythmiaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule, ReactiveFormsModule, ],
+      imports: [ FormsModule, ReactiveFormsModule, BrowserAnimationsModule, ],
       declarations: [
         ArrhythmiaComponent,
         MockSumField,
@@ -162,7 +166,7 @@ describe ('ArrhythmiaComponent', () => {
       it ('should output error when form is invalid', () => {
         component.pp1.setValue(3001);
         component.displayValue ();
-        expect (component.output).toEqual ('Форма заполнена не корректно');
+        expect (component.output).toEqual ('ERROR');
       });
 
       it ('should output 20 % when all correct', () => {
@@ -215,14 +219,14 @@ describe ('ArrhythmiaComponent', () => {
   describe ('check markup', () => {
     beforeEach (() => {
       element = fixture.debugElement.nativeElement;
-      output = fixture.debugElement.query(By.css('.form-output')).nativeElement;
+      output = fixture.debugElement.query(By.css('.form-result strong')).nativeElement;
       reset = element.querySelector ('[type="reset"]');
     });
 
     it ('should on input change rewrite output', () => {
       component.pp1.setValue ('.');
       fixture.detectChanges();
-      expect (output.innerHTML).toContain ('Форма заполнена не корректно');
+      expect (output.innerHTML).toContain ('ERROR');
     });
 
     it ('should on reset click call reset method', () => {
@@ -232,9 +236,11 @@ describe ('ArrhythmiaComponent', () => {
       expect (component.reset).toHaveBeenCalled ();
     });
 
-    it ('should show arrhythmia sign when isArrhythmia property is true', () => {
+    it ('should show arrhythmia sign when isArrhythmia property is true and form is valid', () => {
+      component.pp1.setValue (800);
       component.isArrhythmia = true;
       fixture.detectChanges();
+      expect (component.arrhythmiaForm.valid).toBeTruthy ();
       expect (element.querySelector ('.form-alert').innerHTML).toContain ('Аритмия - по данным значениям интервалов PP');
     });
 

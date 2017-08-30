@@ -1,5 +1,7 @@
-<button class="btn btn-outline-primary"
+<span class="btn btn-outline-primary"
       (mousedown)="this.incrementStart ($event)"
+      (touchstart)="this.incrementStart ($event)"
       (mouseup)="this.incrementStop ($event)"
+      (touchend)="this.incrementStop ($event)"
       (mouseleave)="this.incrementStop ($event)"
-      >{{ step >= 0 ? '+' : '-' }}</button>
+      >{{ step >= 0 ? '+' : '-' }}</span>

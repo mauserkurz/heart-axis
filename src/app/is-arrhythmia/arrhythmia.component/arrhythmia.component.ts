@@ -5,12 +5,17 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/fo
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
 import { ArrhythmiaService } from '../services/arrhythmia.service';
 import { AppState } from "../../services/app_state.service";
+import { fadeIn } from "../../services/animations";
 // components
 import { SumFieldComponent } from "../../shared/sum_field.component/sum_field.component";
 
 @Component ({
   selector: 'arrhythmia',
   templateUrl: "./arrhythmia.component.html",
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class ArrhythmiaComponent implements OnInit, OnDestroy {
@@ -95,7 +100,7 @@ export class ArrhythmiaComponent implements OnInit, OnDestroy {
 
   displayValue (): void {
     if (this.arrhythmiaForm.invalid) {
-      this.output = 'Форма заполнена не корректно';
+      this.output = 'ERROR';
     } else {
       let result: number = this.getValue();
 

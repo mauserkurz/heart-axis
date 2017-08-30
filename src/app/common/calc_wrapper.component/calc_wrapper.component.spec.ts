@@ -1,9 +1,13 @@
+// angular
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppState } from "../../services/app_state.service";
-import { CalcWrapperComponent } from "./calc_wrapper.component";
 import { ActivatedRoute } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Observable } from "rxjs/Observable";
+// services and helpers
+import { AppState } from "../../services/app_state.service";
+// components
+import { CalcWrapperComponent } from "./calc_wrapper.component";
 
 class ActivatedRouteMock {
   url: Observable<any>;
@@ -27,7 +31,8 @@ describe ('CalcWrapperComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        BrowserAnimationsModule,
       ],
       declarations: [
         CalcWrapperComponent,

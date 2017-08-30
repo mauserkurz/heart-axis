@@ -1,11 +1,15 @@
+// angular
 import { Directive, Input } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { TestBed, async, fakeAsync, tick, ComponentFixture, } from '@angular/core/testing';
 import { By } from "@angular/platform-browser";
-import { ArrhythmiaSettingsComponent } from './arrhythmia_settings.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Observable } from 'rxjs';
+// services and helpers
 import { AppState } from "../../services/app_state.service";
 import { ArrhythmiaService, arrhythmiaServiceSettings } from "../services/arrhythmia.service";
+// components
+import { ArrhythmiaSettingsComponent } from './arrhythmia_settings.component';
 
 @Directive({
   selector: 'settings-field'
@@ -19,7 +23,7 @@ class MockSettingsField {
   @Input('data') public data: {[s: string]: string};
 }
 
-describe ('AxisSettingsComponent', () => {
+describe ('ArrhythmiaSettingsComponent', () => {
   const formValue: {[s: string]: any} = {
     accuracy: 2,
     coefficient: 15,
@@ -40,7 +44,7 @@ describe ('AxisSettingsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule, ReactiveFormsModule, ],
+      imports: [ FormsModule, ReactiveFormsModule, BrowserAnimationsModule, ],
       declarations: [
         ArrhythmiaSettingsComponent,
         MockSettingsField,
@@ -197,11 +201,11 @@ describe ('AxisSettingsComponent', () => {
         fixture.detectChanges ();
 
         element = fixture.debugElement.nativeElement;
-        expect (element.querySelector ('#message').innerHTML).toContain (str);
+        expect (element.querySelector ('.form-message').innerHTML).toContain (str);
 
         setTimeout (() => {
           fixture.detectChanges ();
-          expect (element.querySelector ('#message')).toBeNull ();
+          expect (element.querySelector ('.form-message')).toBeNull ();
           done ();
         }, 5000);
       });
@@ -315,7 +319,7 @@ describe ('AxisSettingsComponent', () => {
     it ('should on click more-then-only checkbox toggle state', fakeAsync (() => {
       expect (component.moreThenOnly).toBeTruthy ();
       expect (element.querySelectorAll ('.state-alert')[0].innerHTML)
-        .toContain ('Расчитывать если результат больше разницы');
+        .toContain ('Расчитывать если результат строго больше разницы');
 
       moreThenOnlyInput.click();
       tick ();

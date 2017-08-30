@@ -1,9 +1,13 @@
+// angular
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
-import { Observable } from "rxjs/Observable";
-import { FaqComponent } from './faq.component';
-import { RouterTestingModule } from "@angular/router/testing";
 import { ActivatedRoute } from "@angular/router";
+import { RouterTestingModule } from "@angular/router/testing";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Observable } from "rxjs/Observable";
+// services and helpers
 import { AppState } from "../../services/app_state.service";
+// components
+import { FaqComponent } from './faq.component';
 
 class ActivatedRouteMock {
   parent: any;
@@ -25,7 +29,7 @@ describe ('FaqComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ RouterTestingModule ],
+      imports: [ RouterTestingModule, BrowserAnimationsModule, ],
       declarations: [ FaqComponent ],
       providers: [
         {

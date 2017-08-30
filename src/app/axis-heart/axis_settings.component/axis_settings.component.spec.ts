@@ -1,11 +1,15 @@
+// angular
 import { Directive, Input } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { By } from '@angular/platform-browser';
 import { TestBed, async, fakeAsync, tick, ComponentFixture, } from '@angular/core/testing';
-import { AxisSettingsComponent } from './axis_settings.component';
 import { Observable } from 'rxjs';
-import { AxisCalculator, axisCalculatorParams } from "../services/axis_calculator.service";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// services and helpers
 import { AppState } from "../../services/app_state.service";
+import { AxisCalculator, axisCalculatorParams } from "../services/axis_calculator.service";
+// components
+import { AxisSettingsComponent } from './axis_settings.component';
 
 @Directive({
   selector: 'settings-field'
@@ -35,7 +39,7 @@ describe ('AxisSettingsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule, ReactiveFormsModule, ],
+      imports: [ FormsModule, ReactiveFormsModule, BrowserAnimationsModule ],
       declarations: [
         AxisSettingsComponent,
         MockSettingsField,
@@ -208,11 +212,11 @@ describe ('AxisSettingsComponent', () => {
         fixture.detectChanges ();
 
         element = fixture.debugElement.nativeElement;
-        expect (element.querySelector ('#message').innerHTML).toContain (str);
+        expect (element.querySelector ('.form-message').innerHTML).toContain (str);
 
         setTimeout (() => {
           fixture.detectChanges ();
-          expect (element.querySelector ('#message')).toBeNull ();
+          expect (element.querySelector ('.form-message')).toBeNull ();
           done ();
         }, 5000);
       });
@@ -302,7 +306,7 @@ describe ('AxisSettingsComponent', () => {
     beforeEach (() => {
       element = fixture.debugElement.nativeElement;
       input = fixture.debugElement.query(By.css('[name="use-sums"]')).nativeElement;
-      form = fixture.debugElement.query(By.css('#count-form')).nativeElement;
+      form = fixture.debugElement.query(By.css('form')).nativeElement;
       reset = fixture.debugElement.query(By.css('[type="reset"]')).nativeElement;
     });
 

@@ -1,8 +1,12 @@
+// angular
 import { Component, CUSTOM_ELEMENTS_SCHEMA, Directive, Input } from "@angular/core";
 import { FormsModule, ReactiveFormsModule, FormControl, Validators } from "@angular/forms";
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
-import { SumFieldComponent } from './sum_field.component';
+// services and helpers
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
+// components
+import { SumFieldComponent } from './sum_field.component';
+import { JqHelper } from "../../helpers/jqHelper";
 
 @Directive ({
   selector: 'btn-plus'
@@ -72,6 +76,18 @@ describe ('SumFieldComponent', () => {
       expect (element.querySelector ('.input-error')).toBeNull ();
     });
   });
+  describe('check methods', () => {
+    it('on initialization start popover of Popper.js', () => {
+      spyOn (JqHelper, 'popoverStart');
+      component.ngOnInit();
+      expect (JqHelper.popoverStart).toHaveBeenCalled ();
+    });
+    it('on destruction hide popover of Popper.js', () => {
+      spyOn (JqHelper, 'popoverHide');
+      component.ngOnDestroy();
+      expect (JqHelper.popoverHide).toHaveBeenCalled ();
+    });
+  });
 });
 
 @Component({
@@ -82,7 +98,7 @@ describe ('SumFieldComponent', () => {
       [step]="step"
       [maximum]="sumMax"
       [minimum]="sumMin"
-      [data]="{'name':'sumI', 'title':'Алгебраическая сумма зубцов QRS I отведения.'}">
+      [data]="{'name':'sumI', 'title': 'Вектор QRS I', 'popover':'Алгебраическая сумма зубцов QRS I отведения.'}">
     </sum-field>`
 })
 

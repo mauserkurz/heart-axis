@@ -5,12 +5,17 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from "@angular/fo
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
 import { ArrhythmiaService } from "../services/arrhythmia.service";
 import { AppState } from "../../services/app_state.service";
+import { fadeIn } from "../../services/animations";
 // components
 import { SettingsFieldComponent } from "../../shared/settings_field.component/settings_field.component";
 
 @Component ({
   selector: 'arrhythmia-settings',
-  templateUrl: './arrhythmia_settings.component.html'
+  templateUrl: './arrhythmia_settings.component.html',
+  animations: [
+    fadeIn
+  ],
+  host: { '[@fadeIn]': '' }
 })
 
 export class ArrhythmiaSettingsComponent implements OnInit, OnDestroy {
@@ -135,7 +140,7 @@ export class ArrhythmiaSettingsComponent implements OnInit, OnDestroy {
     this.coefficient.reset (this.service.settings.coefficient.init);
     this.difference.reset (this.service.settings.difference.init);
     this.moreThenOnlyField.reset (this.service.settings.moreThenOnly);
-    this.state.toggle ('usePercentage', true);
+    this.usePercentageField.reset (true);
     this.setSettings ();
     this.formChanged = false;
     this.showResult ('сброшено');

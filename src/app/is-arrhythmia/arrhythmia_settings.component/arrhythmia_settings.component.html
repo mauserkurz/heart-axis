@@ -13,8 +13,8 @@
                     [minimum]="service.settings.accuracy.min"
                     [data]="{
         'name': 'accuracy',
-        'title': 'Точность - количество знаков после запятой.',
-        'output': 'Точность - '
+        'popover': 'Точность - количество знаков после запятой.',
+        'output': 'Точность '
       }">
             </settings-field>
             <settings-field
@@ -26,8 +26,9 @@
                     [minimum]="service.settings.coefficient.min"
                     [data]="{
         'name': 'coefficient',
-        'title': 'Разница в %, когда диагностируется аритмия',
-        'output': 'Разница в % - '
+        'popover': 'Разница в %, когда диагностируется аритмия',
+        'output': 'Разница в ',
+        'outputAfter': ' %'
       }">
             </settings-field>
             <settings-field
@@ -39,8 +40,9 @@
                     [minimum]="service.settings.difference.min"
                     [data]="{
         'name': 'difference',
-        'title': 'Разница в милисекундах, когда диагностируется аритмия',
-        'output': 'Разница в милисекундах - '
+        'popover': 'Разница в милисекундах, когда диагностируется аритмия',
+        'output': 'Разница в ',
+        'outputAfter': ' мсек'
       }">
             </settings-field>
             <div class="form-check">
@@ -50,13 +52,13 @@
                             type="checkbox"
                             name="more-then-only"
                             [formControl]="moreThenOnlyField">
-                    Диагностировать аритмию, когда результат больше разницы
+                    Аритмия, если результат строго больше разницы
                 </label>
             </div>
-            <div class="form-alert alert alert-info" role="alert">
+            <div class="alert alert-info" role="alert">
                 <span class="state-alert"
                       *ngIf="moreThenOnly">
-                  Расчитывать если результат больше разницы
+                  Расчитывать если результат строго больше разницы
                 </span>
                 <span class="state-alert"
                       *ngIf="!moreThenOnly">
@@ -70,10 +72,10 @@
                             type="checkbox"
                             name="use-percentage"
                             [formControl]="usePercentageField">
-                    Использовать разность в %
+                    Разность в %
                 </label>
             </div>
-            <div class="form-alert alert alert-info" role="alert">
+            <div class="alert alert-info" role="alert">
                 <span class="state-alert"
                       *ngIf="usePercentage">
                   Расчитывать используя разность в %

@@ -1,11 +1,12 @@
+// angular
 import { Location } from '@angular/common';
 import { Component } from "@angular/core";
 import { Router } from '@angular/router';
 import { TestBed, async, ComponentFixture, inject } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // components
 import { AppComponent } from './app.component';
-
 @Component ({
   selector: 'faq',
   template: ''
@@ -24,6 +25,7 @@ describe ('AppComponent', () => {
         RouterTestingModule.withRoutes([
           { path: 'faq', component: FaqComponentMock }
         ]),
+        BrowserAnimationsModule,
       ],
       declarations: [
         AppComponent,

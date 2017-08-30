@@ -24,8 +24,9 @@ module.exports = function (config) {
     singleRun: false,
     concurrency: Infinity,
     basePath: './',
-    frameworks: ['jasmine',],
+    frameworks: ['jasmine-jquery', 'jasmine',],
     plugins: [
+      require('karma-jasmine-jquery'),
       require('karma-jasmine'),
       require('karma-webpack'),
       require('karma-sourcemap-loader'),
@@ -85,6 +86,24 @@ module.exports = function (config) {
               'angular2-template-loader'
             ],
           },
+          {
+            // regexp для файлов изображения
+            test: /\.(png|jpe?g|gif|svg)$/i,
+            // обратная очередь обработчиков файлов
+            use: [
+              // file-loader - плагин, который инструктирует webpack загружать требуемый обьект как файл, возвращая его url
+              'file-loader',
+            ]
+          },
+          {
+            // regexp для файлов шрифтов старого формата
+            test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            // обратная очередь обработчиков файлов
+            use: [
+              // file-loader - плагин, который инструктирует webpack загружать требуемый обьект как файл, возвращая его url
+              { loader: 'file-loader' },
+            ]
+          },
         ]
       },
       stats: {
@@ -110,6 +129,9 @@ module.exports = function (config) {
       clearContext: false,
     },
     files: [
+      'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js',
+      'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',
       { pattern: 'test.bundle.js', watched: false, },
     ],
     mime: {

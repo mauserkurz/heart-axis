@@ -49,10 +49,6 @@ let config = {
       entry: {
         // точка вхождения - файл typescript из source, который будет основным в бандле
         app: './src/app/app.module.ts',
-        // точка вхождения - расчетов ЭОС
-        axis: './src/app/axis-heart',
-        // точка вхождения - расчетов PP
-        arrhythmia: './src/app/is-arrhythmia',
         // файл typescript, в котором будут собраны статические зависимые модули
         vendor: ['./src/app/vendor.ts'],
       },
@@ -106,8 +102,9 @@ module.exports = {
         // исключить из обработки
         exclude: /node_modules/,
         // raw-loader - загружает стили в виде строки
+        // postcss-loader - обработчик postcssб использующий плагины из файла настроек - postcss.config.js, на пример autoprefixer
         // sass-loader - плагин использует node-sass для компиляции css из scss и/или sass
-        use: ['raw-loader', 'sass-loader'],//css-loader
+        use: ['raw-loader', 'postcss-loader', 'sass-loader'],//css-loader
         // путь выгрузки сгенерированных файлов
         // publicPath: config.paths.dev,
       },
@@ -132,6 +129,15 @@ module.exports = {
           // angular2-template-loader - лоадер загружат модулями файлы шаблонов и стилей из templateUrl, styleUrls компонентов
           'angular2-template-loader'
         ],
+      },
+      {
+        // regexp для файлов векторного изображения
+        test: /\.svg$/,
+        // обратная очередь обработчиков файлов
+        use: [
+          // file-loader - плагин, который инструктирует webpack загружать требуемый обьект как файл, возвращая его url
+          'file-loader'
+        ]
       },
       {
         // regexp для файлов растрового изображения

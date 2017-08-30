@@ -1,9 +1,13 @@
+// angular
 import { Component, CUSTOM_ELEMENTS_SCHEMA, Directive, Input } from "@angular/core";
 import { FormsModule, ReactiveFormsModule, FormControl, Validators } from "@angular/forms";
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
-import { SettingsFieldComponent } from './settings_field.component';
+// services and helpers
 import { verifyNum, checkMinimum, checkMaximum } from "../../helpers/validators";
 import { AxisCalculator, axisCalculatorParams } from "../../axis-heart/services/axis_calculator.service";
+// components
+import { SettingsFieldComponent } from './settings_field.component';
+import { JqHelper } from "../../helpers/jqHelper";
 
 @Directive ({
   selector: 'btn-plus'
@@ -16,7 +20,7 @@ class MockBtnPlus {
 const valueMax: number = 20;
 const valueMin: number = -20;
 
-describe ('SumFieldComponent', () => {
+describe ('SettingsFieldComponent', () => {
   let axisCalculatorSettings: axisCalculatorParams;
   let axisCalculator: AxisCalculator;
   let component: SettingsFieldComponent;
@@ -111,6 +115,18 @@ describe ('SumFieldComponent', () => {
       expect (element.querySelector ('.input-error')).toBeNull ();
     });
   });
+  describe('check methods', () => {
+    it('on initialization start popover of Popper.js', () => {
+      spyOn (JqHelper, 'popoverStart');
+      component.ngOnInit();
+      expect (JqHelper.popoverStart).toHaveBeenCalled ();
+    });
+    it('on destruction hide popover of Popper.js', () => {
+      spyOn (JqHelper, 'popoverHide');
+      component.ngOnDestroy();
+      expect (JqHelper.popoverHide).toHaveBeenCalled ();
+    });
+  });
 });
 
 @Component({
@@ -124,7 +140,7 @@ describe ('SumFieldComponent', () => {
       [minimum]="valueMin"
       [data]="{
         'name': 'value',
-        'title': 'Точность - количество знаков после запятой.',
+        'popover': 'Точность - количество знаков после запятой.',
         'output': 'Точность - '
       }">
     </settings-field>`

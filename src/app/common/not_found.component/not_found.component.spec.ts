@@ -1,4 +1,7 @@
+// angular
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// components
 import { NotFoundComponent } from './not_found.component';
 
 describe ('NotFoundComponent', () => {
@@ -7,6 +10,7 @@ describe ('NotFoundComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ BrowserAnimationsModule ],
       declarations: [ NotFoundComponent ]
     })
     .compileComponents();

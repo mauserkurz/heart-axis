@@ -1,5 +1,8 @@
+// angular
 import { TestBed, async, ComponentFixture, } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// components
 import { FAQListComponent } from './faq_list.component';
 
 describe ('FAQListComponent', () => {
@@ -8,7 +11,7 @@ describe ('FAQListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ RouterTestingModule ],
+      imports: [ RouterTestingModule, BrowserAnimationsModule, ],
       declarations: [ FAQListComponent ]
     })
     .compileComponents();

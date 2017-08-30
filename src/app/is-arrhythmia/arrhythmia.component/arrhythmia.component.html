@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col col-12">
-        <h2>Расчет пропорции интервалов PP</h2>
+        <h2>Калькулятор</h2>
         <form
                 action=""
                 class=""
@@ -11,23 +11,25 @@
                     [step]="10"
                     [maximum]="arrhythmiaModel.settings.interval.max"
                     [minimum]="arrhythmiaModel.settings.interval.min"
-                    [data]="{'name':'pp1', 'title':'P<sub>0</sub>P<sub>1</sub> интервал'}">
+                    [data]="{'name':'pp1', 'title': 'P<sub>0</sub>P<sub>1</sub> интервал', 'popover':'Первый интервал PP, находящийся перед вторым интервалом PP в миллисикундах'}">
             </sum-field>
             <sum-field
                     [input]="pp2"
                     [step]="10"
                     [maximum]="arrhythmiaModel.settings.interval.max"
                     [minimum]="arrhythmiaModel.settings.interval.min"
-                    [data]="{'name':'pp2', 'title':'P<sub>1</sub>P<sub>2</sub> интервал'}">
+                    [data]="{'name':'pp2', 'title': 'P<sub>1</sub>P<sub>2</sub> интервал', 'popover':'Второй интервал PP следующий за первым интервалом PP в миллисикундах'}">
             </sum-field>
             <output class="form-result">
-                <strong *ngIf="useSeconds">Разница в миллисекундах
-                    {{ this.output }}
-                </strong>
-                <strong *ngIf="!useSeconds">Разница в процентах
+                <strong>Разница
                     {{ this.output }}
                 </strong>
             </output>
+            <div class="invalid-feedback" *ngIf="arrhythmiaForm.invalid">
+                <div class="form-error alert alert-danger" role="alert">
+                    Форма заполнена не корректно
+                </div>
+            </div>
             <output class="form-result">
                 <strong *ngIf="heartRate && !isArrhythmia && arrhythmiaForm.valid">
                     ЧСС {{ heartRate[0] }} уд/мин.

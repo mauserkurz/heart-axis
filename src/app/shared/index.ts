@@ -7,6 +7,7 @@ import { FaqComponent } from "../shared/faq.component/faq.component";
 import { BtnPlus } from "../shared/btn_plus.component/btn_plus.component";
 import { SumFieldComponent } from "../shared/sum_field.component/sum_field.component";
 import { SettingsFieldComponent } from "../shared/settings_field.component/settings_field.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
