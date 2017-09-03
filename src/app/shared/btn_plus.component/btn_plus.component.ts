@@ -24,14 +24,6 @@ export class BtnPlus {
 
     this.increment ();
 
-    if (this._delayBeforeLoop) {
-      clearTimeout (this._delayBeforeLoop);
-    }
-
-    if (this._loop) {
-      clearInterval (this._loop);
-    }
-
     this._delayBeforeLoop = setTimeout (() => {
       this._loop = setInterval (() => {
         this.increment ();
@@ -43,12 +35,7 @@ export class BtnPlus {
   incrementStop (event: MouseEvent): void {
     event.preventDefault ();
 
-    if (this._delayBeforeLoop) {
-      clearTimeout (this._delayBeforeLoop);
-    }
-
-    if (this._loop) {
-      clearInterval (this._loop);
-    }
+    clearTimeout (this._delayBeforeLoop);
+    clearInterval (this._loop);
   }
 }

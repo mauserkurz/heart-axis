@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col col-12">
+        <h2>Калькулятор</h2>
+        <form
+            action=""
+            class=""
+            [formGroup]="qtcForm">
+            <sum-field
+                    [input]="qt"
+                    [step]="10"
+                    [maximum]="service.settings.interval.max"
+                    [minimum]="service.settings.interval.min"
+                    [data]="{'name':'qt', 'title': 'Интервал QT', 'popover':'Интервал QT в миллисикундах'}">
+            </sum-field>
+            <sum-field
+                    [input]="rr"
+                    [step]="10"
+                    [maximum]="service.settings.interval.max"
+                    [minimum]="service.settings.interval.min"
+                    [data]="{'name':'rr', 'title': 'Интервал RR', 'popover':'Интервал RR в миллисикундах'}">
+            </sum-field>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="is-male"
+                            [formControl]="isMaleField">
+                    Пол
+                </label><br>
+                <span class="state-alert"
+                      *ngIf="isMale">
+                  Выбран мужской пол
+                </span>
+                <span class="state-alert"
+                      *ngIf="!isMale">
+                  Выбран женский пол
+                </span>
+            </div>
+            <output class="form-result col-sm-12 col-md-8">
+                <strong>Интервал QTc:</strong>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="alert">
+                            <strong>По Bazett {{ outputBazett }} мсек.</strong>
+                            <p class="h5">
+                                <span *ngIf="compareResult.bazett"
+                                      [ngClass]="['badge', compareResult.bazett.colorClass]">
+                                    Значение - {{ compareResult.bazett.name }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="alert">
+                            <strong>По Fredericia {{ outputFredericia }} мсек.</strong>
+                            <p class="h5">
+                                <span *ngIf="compareResult.fredericia"
+                                      [ngClass]="['badge', compareResult.fredericia.colorClass]">
+                                    Значение - {{ compareResult.fredericia.name }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="alert">
+                            <strong>По Framingham {{ outputFramingham }} мсек.</strong>
+                            <p class="h5">
+                                <span *ngIf="compareResult.framingham"
+                                      [ngClass]="['badge', compareResult.framingham.colorClass]">
+                                    Значение - {{ compareResult.framingham.name }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="alert">
+                            <strong>По Hodges {{ outputHodges }} мсек.</strong>
+                            <p class="h5">
+                                <span *ngIf="compareResult.hodges"
+                                      [ngClass]="['badge', compareResult.hodges.colorClass]">
+                                    Значение - {{ compareResult.hodges.name }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </output>
+            <div class="row">
+                <div class="col col-12">
+                    <button class="btn btn-primary" type="reset" (click)="reset($event)">Сбросить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

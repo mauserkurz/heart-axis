@@ -46,10 +46,20 @@ describe ('BtnPlus', () => {
     expect (element.innerHTML).toContain ('-');
   });
 
+  it ('should restart adding when incrementStart runs second time', (done) => {
+    component.incrementStart (new MouseEvent('mousedown'));
+    setTimeout (() => {
+      component.incrementStart (new MouseEvent('click'));
+      component.incrementStop (new MouseEvent('mouseup'));
+      expect (wrapper.input.value).toBeLessThan (3);
+      done ();
+    }, 200);
+  });
+
   it ('adding while press LMB 1 sec', (done) => {
     component.incrementStart (new MouseEvent('mousedown'));
     setTimeout (() => {
-      component.incrementStop (new MouseEvent('mouseup'));
+      component.incrementStop (new MouseEvent('mousedown'));
       expect (wrapper.input.value).toBeGreaterThan (20);
       done ();
     }, 1000);

@@ -79,7 +79,7 @@ describe ('SumFieldComponent', () => {
   describe('check methods', () => {
     it('on initialization start popover of Popper.js', () => {
       spyOn (JqHelper, 'popoverStart');
-      component.ngOnInit();
+      component.ngAfterViewInit();
       expect (JqHelper.popoverStart).toHaveBeenCalled ();
     });
     it('on destruction hide popover of Popper.js', () => {

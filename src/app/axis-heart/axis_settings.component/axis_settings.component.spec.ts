@@ -267,6 +267,15 @@ describe ('AxisSettingsComponent', () => {
         expect (component.setSettings).toHaveBeenCalled ();
         expect (component.showResult).toHaveBeenCalled ();
       });
+
+      it ('should return false when form is invalid', () => {
+        component.accuracy.setValue(-1);
+        fixture.detectChanges();
+        component.onSubmit (component.settingsForm.value);
+
+        expect (component.settingsForm.valid).toBeFalsy();
+        expect (component.message).toBeFalsy();
+      });
     });
 
     describe ('changeInputs', () => {

@@ -1,15 +1,12 @@
 export class JqHelper {
+
   constructor () {}
 
   static popoverStart (): void {
-    if ($ && $.fn.popover) {
-      $('[data-toggle="popover"]').popover();
-    }
+    $('[data-toggle="popover"]').popover();
   }
 
   static popoverHide (): void {
-    if ($ && $.fn.popover) {
-      $('[data-toggle="popover"]').popover('hide');
-    }
+    $('[data-toggle="popover"]').popover('hide');
   }
 }

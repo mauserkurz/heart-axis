@@ -1,5 +1,6 @@
 // angular
-import { Component, HostBinding, ViewEncapsulation, } from "@angular/core";
+import { Component, HostBinding, Input, ViewEncapsulation, } from "@angular/core";
+import { NavigationStart, Router } from "@angular/router";
 // services
 import { fadeIn } from "./services/animations";
 
@@ -17,8 +18,20 @@ import { fadeIn } from "./services/animations";
 })
 
 export class AppComponent {
+  wrapperIsActive: boolean = false;
+  matchUrls: string[] = ['/heart-axis', '/is-arrhythmia', '/qtc'];
   @HostBinding('class.container') container: boolean = true;
 
-  constructor () {}
+  constructor (public router: Router) {
+    router.events
+      .filter(event => event instanceof NavigationStart)
+      .subscribe((event: NavigationStart) => {
+        this.wrapperIsActive = this.testUrls(event.url);
+      });
+    sessionStorage.clear();
+  }
 
+  testUrls (url: string): boolean {
+    return this.matchUrls.some (value => url.indexOf(value) > -1);
+  }
 }

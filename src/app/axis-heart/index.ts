@@ -10,9 +10,9 @@ import { FaqComponent } from "../shared/faq.component/faq.component";
 import { CalculatorComponent } from "./calculator.component/calculator.component";
 import { AxisSettingsComponent } from "./axis_settings.component/axis_settings.component";
 import { SharedModule } from "../shared/";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-const routes: Routes = [
+export const routes: Routes = [
+  { path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'settings', component: AxisSettingsComponent },
   { path: 'faq', component: FaqComponent },
@@ -59,7 +59,7 @@ const routes: Routes = [
     },
   ],
   imports: [
-    RouterModule.forChild (routes),
+    RouterModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

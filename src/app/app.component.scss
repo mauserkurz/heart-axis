@@ -17,13 +17,15 @@ input.ng-invalid {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    //max-width: 35em;
 }
 .form-message {
     margin-top: .6em;
 }
 .form-result {
     padding: .6em 0;
+    & .alert {
+        margin-bottom: 0;
+    }
 }
 .form-alert {
     margin: .6em 0;
@@ -32,9 +34,17 @@ input.ng-invalid {
     height: 10vw;
     background-color: darkgrey;
 }
+.border-view {
+    width: 10rem;
+}
 @media screen and (max-width: 767px) {
     .h1-title {
         font-size: 2.25rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .hide-sm {
+        display: none;
     }
 }
 
@@ -59,4 +69,7 @@ index,
 calc-wrap,
 faq-list {
     padding-top: 1.2em;
+}
+qtc-settings .nav-tabs {
+    margin-bottom: 1rem;
 }

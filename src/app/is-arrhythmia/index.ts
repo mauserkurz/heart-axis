@@ -10,9 +10,9 @@ import { FaqComponent } from "../shared/faq.component/faq.component";
 import { ArrhythmiaComponent } from "./arrhythmia.component/arrhythmia.component";
 import { ArrhythmiaSettingsComponent } from "./arrhythmia_settings.component/arrhythmia_settings.component";
 import { SharedModule } from "../shared/";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-const routes: Routes = [
+export const routes: Routes = [
+  { path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: ArrhythmiaComponent },
   { path: 'settings', component: ArrhythmiaSettingsComponent },
   { path: 'faq', component: FaqComponent },
@@ -55,7 +55,7 @@ const routes: Routes = [
     },
   ],
   imports: [
-    RouterModule.forChild (routes),
+    RouterModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

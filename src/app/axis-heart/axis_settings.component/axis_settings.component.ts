@@ -139,9 +139,8 @@ export class AxisSettingsComponent implements OnInit, OnDestroy {
 
   showResult (message: string): void {
     this.message = message;
-    if (this.messageLoop) {
-      clearTimeout (this.messageLoop);
-    }
+
+    clearTimeout (this.messageLoop);
 
     this.messageLoop = setTimeout (() => {
       this.message = void (0);

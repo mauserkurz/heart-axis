@@ -9,14 +9,31 @@
             </button>
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a [routerLink]="['']" class="nav-link" routerLinkActive="active">Главная</a></li>
+                    <li class="nav-item"><a [routerLink]="['/']" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Главная
+                    </a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            [class.active]="wrapperIsActive">
                           Калькуляторы
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a [routerLink]="['heart-axis']" class="dropdown-item" routerLinkActive="active">Расчет ЭОС</a>
-                            <a [routerLink]="['is-arrhythmia']" class="dropdown-item" routerLinkActive="active">Расчет ритмичности</a>
+                            <a
+                                [routerLink]="['heart-axis']"
+                                class="dropdown-item"
+                                routerLinkActive="active">Расчет ЭОС</a>
+                            <a
+                                [routerLink]="['is-arrhythmia']"
+                                class="dropdown-item"
+                                routerLinkActive="active">Расчет ритмичности</a>
+                            <a
+                                [routerLink]="['qtc']"
+                                class="dropdown-item"
+                                routerLinkActive="active">Расчет QTc</a>
                         </div>
                     </li>
                     <li class="nav-item"><a [routerLink]="['faq-list']" class="nav-link" routerLinkActive="active">FAQ</a></li>

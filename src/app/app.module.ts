@@ -17,6 +17,7 @@ import { FAQListComponent } from './common/faq_list.component/faq_list.component
 // nested modules
 import { AxisHeartModule } from "./axis-heart/index";
 import { IsArrhythmiaModule } from "./is-arrhythmia/index";
+import { QTcModule } from "./qtc/index";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IsArrhythmiaModule } from "./is-arrhythmia/index";
     BrowserModule,
     AxisHeartModule,
     IsArrhythmiaModule,
-    RouterModule.forRoot(routes),
+    QTcModule,
+    RouterModule.forRoot(routes, { useHash: true }),
     BrowserAnimationsModule,
   ],
   bootstrap: [AppComponent],

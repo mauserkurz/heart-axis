@@ -1,0 +1,183 @@
+<div class="row">
+    <h2>Настройки</h2>
+    <div class="col-12">
+        <label for="setting-tab">Список значений QTc</label>
+        <ul class="nav nav-tabs" id="setting-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="male-tab" data-toggle="tab" role="tab" aria-controls="male"
+                   aria-expanded="true"
+                   href="#male"
+                   (click)="updateSex('male')">Мужские</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="female-tab" data-toggle="tab" role="tab" aria-controls="female"
+                   aria-expanded="true"
+                   href="#female"
+                   (click)="updateSex('female')">Женские</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="male" role="tabpanel" aria-labelledby="male-tab">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h3 class="h4">Границы</h3>
+                        <div class="row">
+                            <div *ngFor="let b of maleData; let i = index"
+                                 [ngClass]="['alert', 'border-view', b.colorClass]">
+                                <strong>{{ b.name }}</strong>
+                                <br>
+                                <span>{{ b.colorClass }}</span>
+                                <p class="h5">
+                                    <span class="badge badge-info">{{ b.border }} мсек.</span>
+                                </p>
+                                <button
+                                        *ngIf="maleData.length > 1"
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        (click)="removeRangeItem('male', i)">
+                                    Удалить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide-sm col-md-6">
+                        <h3 class="h4">Таблица значений</h3>
+                        <div *ngFor="let a of maleRange; let i = index"
+                             [ngClass]="['alert', a.colorClass]">
+                                <span *ngIf="i === 0">
+                                    Значение {{ a.name }},<br>QTc меньше {{ a.max }} мсек.
+                                </span>
+                            <span *ngIf="i > 0 && i < (maleRange.length - 1)">
+                                    Значение {{ a.name }},<br>QTc {{ a.min }} - {{ a.max }} мсек.
+                                </span>
+                            <span *ngIf="i === (maleRange.length - 1)">
+                                    Значение {{ a.name }},<br>QTc больше {{ a.min }} мсек.
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="female" role="tabpanel" aria-labelledby="female-tab">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h3 class="h4">Границы</h3>
+                        <div class="row">
+                            <div *ngFor="let b of femaleData; let i = index"
+                                 [ngClass]="['alert', 'border-view', b.colorClass]">
+                                <strong>{{ b.name }}</strong>
+                                <br>
+                                <span>{{ b.colorClass }}</span>
+                                <p class="h5">
+                                    <span class="badge badge-info">{{ b.border }} мсек.</span>
+                                </p>
+                                <button
+                                        *ngIf="femaleData.length > 1"
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        (click)="removeRangeItem('female', i)">
+                                    Удалить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide-sm col-md-6">
+                        <h3 class="h4">Таблица значений</h3>
+                        <div *ngFor="let a of femaleRange; let i = index"
+                             [ngClass]="['alert', a.colorClass]">
+                                <span *ngIf="i === 0">
+                                    Значение {{ a.name }},<br>QTc меньше {{ a.max }} мсек.
+                                </span>
+                            <span *ngIf="i > 0 && i < (femaleRange.length - 1)">
+                                    Значение {{ a.name }},<br>QTc {{ a.min }} - {{ a.max }} мсек.
+                                </span>
+                            <span *ngIf="i === (femaleRange.length - 1)">
+                                    Значение {{ a.name }},<br>QTc больше {{ a.min }} мсек.
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action=""
+              class="form-inline range-form"
+              [formGroup]="rangeForm"
+              (ngSubmit)="addItem(rangeForm.value)">
+            <div class="form-group">
+                <label class="alert form-label" for="name-field">Значение</label>
+                <input
+                        class="form-control"
+                        id="name-field"
+                        name="name"
+                        type="text"
+                        [formControl]="name">
+                <output class="invalid-feedback" *ngIf="name.errors">
+                    <span class="input-error" *ngIf="name.hasError('required')">Поле не заполено</span>
+                </output>
+            </div>
+            <div class="form-group">
+                <label class="alert form-label" for="border-field">Граница</label>
+                <input
+                        id="border-field"
+                        class="form-control"
+                        name="border"
+                        type="number"
+                        [formControl]="border">
+                <output class="invalid-feedback" *ngIf="border.errors">
+                    <span class="input-error" *ngIf="border.hasError('required')">Поле не заполено</span>
+                    <span class="input-error" *ngIf="border.hasError('borderExist')">Такая граница уже есть</span>
+                    <span class="input-error" *ngIf="border.hasError('invalidMinimum')">Введите большее число</span>
+                    <span class="input-error" *ngIf="border.hasError('invalidMaximum')">Введите меньшее число</span>
+                </output>
+            </div>
+            <div class="form-group">
+                <label class="alert form-label" for="color-class-select">Подсветка</label>
+                <select
+                        id="color-class-select"
+                        class="form-control"
+                        name="color-class"
+                        [formControl]="colorClass">
+                    <option value="alert-info">info</option>
+                    <option value="alert-warning">warning</option>
+                    <option value="alert-danger">danger</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-info" type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+    <div class="col col-12">
+        <form action=""
+              [formGroup]="settingsForm"
+              (ngSubmit)="onSubmit(settingsForm.value)"
+              class="count-form">
+            <fieldset>
+            </fieldset>
+            <settings-field
+                    [input]="accuracy"
+                    [step]="1"
+                    [value]="service.accuracy"
+                    [maximum]="service.settings.accuracy.max"
+                    [minimum]="service.settings.accuracy.min"
+                    [data]="{
+        'name': 'accuracy',
+        'popover': 'Точность - количество знаков после запятой.',
+        'output': 'Точность ',
+        'outputAfter': ' знака'
+      }">
+            </settings-field>
+            <div class="row">
+                <div class="col col-12">
+                    <button id="to-count" type="submit" class="btn btn-primary">Сохранить</button>
+                    <div *ngIf="formChanged" class="form-alert alert alert-warning" role="alert">
+                        не сохранено
+                    </div>
+                    <button type="reset" (click)="reset($event)" class="btn btn-secondary">Сбросить</button>
+                </div>
+            </div>
+            <div *ngIf="message" class="form-message alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        </form>
+    </div>
+</div>

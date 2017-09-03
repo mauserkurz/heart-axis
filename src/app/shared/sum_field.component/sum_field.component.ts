@@ -1,5 +1,5 @@
 // angular
-import { Component, HostBinding, Input, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostBinding, Input, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // components
 import { BtnPlus } from "../btn_plus.component/btn_plus.component";
@@ -10,7 +10,7 @@ import { JqHelper } from "../../helpers/jqHelper";
   templateUrl: './sum_field.component.html'
 })
 
-export class SumFieldComponent implements OnInit, OnDestroy {
+export class SumFieldComponent implements AfterViewInit, OnDestroy {
   @Input() input: FormControl;
   @Input() step: number;
   @Input() maximum: number;
@@ -20,7 +20,7 @@ export class SumFieldComponent implements OnInit, OnDestroy {
 
   constructor () {}
 
-  ngOnInit () {
+  ngAfterViewInit  () {
     JqHelper.popoverStart ();
   }
   ngOnDestroy () {

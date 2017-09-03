@@ -2,3 +2,5 @@ node_modules/
 typings/
 .awcache/
 .idea/
+coverage/
+npm-debug.log

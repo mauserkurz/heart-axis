@@ -23,7 +23,8 @@ describe ('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule.withRoutes([
-          { path: 'faq', component: FaqComponentMock }
+          { path: 'faq', component: FaqComponentMock },
+          { path: 'heart-axis', component: FaqComponentMock }
         ]),
         BrowserAnimationsModule,
       ],
@@ -50,9 +51,22 @@ describe ('AppComponent', () => {
     expect (component).toBeTruthy ();
   });
 
-  it('should go to faq', async(() => {
+  it ('testUrls method check url matches with any value of matchUrls property', () => {
+    expect (component.testUrls ('/faq')).toBeFalsy ();
+    expect (component.testUrls ('/heart-axis')).toBeTruthy ();
+  });
+
+  it('should go to faq and wrapperIsActive is false', async(() => {
     router.navigate(['/faq']).then(() => {
       expect(location.path()).toBe('/faq');
+      expect (component.wrapperIsActive).toBeFalsy ();
+    });
+  }));
+
+  it('should go to calculator wrapper and wrapperIsActive is true', async(() => {
+    router.navigate(['/heart-axis']).then(() => {
+      expect(location.path()).toBe('/heart-axis');
+      expect (component.wrapperIsActive).toBeTruthy ();
     });
   }));
 });

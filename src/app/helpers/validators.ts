@@ -1,4 +1,5 @@
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
+import { Range } from "../qtc/services/qtc.service";
 
 interface customError {
   [s: string]: boolean,
@@ -41,7 +42,7 @@ export function allValuesNotZero (...controlsKeys: string[]): ValidatorFn {
 }
 
 export function sumOfValuesNotZero (...controlCouples: string[][]): ValidatorFn {
-  return (form: FormGroup): { [s: string]: boolean } => {
+  return (form: FormGroup): customError => {
     let values: number[] = [];
 
     controlCouples.map (couple => {
@@ -52,6 +53,16 @@ export function sumOfValuesNotZero (...controlCouples: string[][]): ValidatorFn 
 
     if (values.every (elem => elem === 0)) {
       return { allSumsIsZero: true };
+    }
+  }
+}
+
+export function noSuchBorders (range: Range): ValidatorFn {
+  return (control: FormControl): customError => {
+    let targetRange: any[] = range.currentDataObserver.value.slice(0);
+
+    if (targetRange.some(value => control.value === value.border)) {
+      return { borderExist: true };
     }
   }
 }

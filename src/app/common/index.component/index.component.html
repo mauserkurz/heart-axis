@@ -8,10 +8,13 @@
             <p>Приложение включает следующие калькуляторы:</p>
             <ul class="navbar">
                 <li class="nav-item">
-                    <a href="/#/heart-axis/calculator" class="nav-link">Расчет ЭОС</a>
+                    <a [routerLink]="['/heart-axis/calculator']" class="nav-link">Расчет ЭОС</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/#/is-arrhythmia/calculator" class="nav-link">Расчет ритмичности</a>
+                    <a [routerLink]="['/is-arrhythmia/calculator']" class="nav-link">Расчет ритмичности</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/qtc/calculator']" class="nav-link">Расчет QTc</a>
                 </li>
             </ul>
             <p class="lead">

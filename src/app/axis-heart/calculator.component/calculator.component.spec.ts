@@ -246,6 +246,13 @@ describe ('CalculatorComponent', () => {
         expect (component.useSums).toBeTruthy ();
         expect (component.resetWaves).toHaveBeenCalled ();
       });
+
+      it ('reset sum inputs when useSums is false', () => {
+        component.useSums = false;
+        spyOn (component, 'resetSums');
+        component.ngOnInit ();
+        expect (component.resetSums).toHaveBeenCalled ();
+      });
     });
 
     describe ('ngOnDestroy', () => {
@@ -259,6 +266,11 @@ describe ('CalculatorComponent', () => {
       it ('should get angle alfa using sums input when useSums is true', () => {
         expect (component.useSums).toBeTruthy ();
         expect (component.getValue ()).toEqual (120);
+      });
+
+      it ('should get angle alfa using waves input when useSums is false', () => {
+        component.useSums = false;
+        expect (component.getValue ()).toEqual (60);
       });
     });
 

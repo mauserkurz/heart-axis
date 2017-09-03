@@ -5,38 +5,37 @@ import { NotFoundComponent } from "./common/not_found.component/not_found.compon
 import { CalcWrapperComponent } from './common/calc_wrapper.component/calc_wrapper.component';
 import { IndexComponent } from './common/index.component/index.component';
 import { FAQListComponent } from './common/faq_list.component/faq_list.component';
+// child routes
+import { routes as heartAxisRoutes } from './axis-heart';
+import { routes as arrhythmiaRoutes } from './is-arrhythmia';
+import { routes as qtcRoutes } from './qtc';
 
 export const routes: Routes = [
   {
     path: '',
-    component: IndexComponent
-  },
-  {
-    path: 'heart-axis',
-    redirectTo: 'heart-axis/calculator',
-    pathMatch: 'full'
+    component: IndexComponent,
   },
   {
     path: 'heart-axis',
     component: CalcWrapperComponent,
-    loadChildren: './axis-heart/index#AxisHeartModule',
-  },
-  {
-    path: 'is-arrhythmia',
-    redirectTo: 'is-arrhythmia/calculator',
-    pathMatch: 'full'
+    children: heartAxisRoutes,
   },
   {
     path: 'is-arrhythmia',
     component: CalcWrapperComponent,
-    loadChildren: './is-arrhythmia/index#IsArrhythmiaModule',
+    children: arrhythmiaRoutes,
+  },
+  {
+    path: 'qtc',
+    component: CalcWrapperComponent,
+    children: qtcRoutes,
   },
   {
     path: 'faq-list',
-    component: FAQListComponent
+    component: FAQListComponent,
   },
   {
     path: '**',
-    component: NotFoundComponent
+    component: NotFoundComponent,
   },
 ];

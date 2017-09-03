@@ -1,5 +1,5 @@
 // angular
-import { Component, HostBinding, Input, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostBinding, Input, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // components
 import { BtnPlus } from "../btn_plus.component/btn_plus.component";
@@ -10,7 +10,7 @@ import { JqHelper } from "../../helpers/jqHelper";
   templateUrl: './settings_field.component.html'
 })
 
-export class SettingsFieldComponent implements OnInit, OnDestroy {
+export class SettingsFieldComponent implements AfterViewInit, OnDestroy {
   @Input() input: FormControl;
   @Input() step: number;
   @Input() maximum: number;
@@ -21,7 +21,7 @@ export class SettingsFieldComponent implements OnInit, OnDestroy {
 
   constructor () {}
 
-  ngOnInit () {
+  ngAfterViewInit () {
     JqHelper.popoverStart ();
   }
   ngOnDestroy () {

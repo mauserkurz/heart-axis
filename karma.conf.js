@@ -20,6 +20,7 @@ const configFiles = {
 module.exports = function (config) {
   config.set({
     autoWatchBatchDelay: 1000,
+    browserNoActivityTimeout: 2000,
     browsers: ['Chrome'/*, 'Firefox', 'IE', 'Opera'*/],
     singleRun: false,
     concurrency: Infinity,
@@ -32,9 +33,10 @@ module.exports = function (config) {
       require('karma-sourcemap-loader'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
+      require('karma-coverage'),
     ],
     preprocessors: {
-      'test.bundle.js': ['webpack', 'sourcemap']
+      'test.bundle.js': [ 'webpack', 'sourcemap' ]
     },
     webpack: {
       devtool: 'inline-source-map',
@@ -81,9 +83,17 @@ module.exports = function (config) {
           },
           {
             test: /\.ts$/,
-            use: [ 
+            use: [
+              'isparta-loader',
               'awesome-typescript-loader',
-              'angular2-template-loader'
+              'angular2-template-loader',
+            ],
+            exclude: /\.spec\.ts$/
+          },
+          {
+            test: /\.spec\.ts$/,
+            use: [
+              'awesome-typescript-loader',
             ],
           },
           {
@@ -124,6 +134,13 @@ module.exports = function (config) {
     webpackMiddleware: {
       // webpack-dev-middleware configuration
       stats: 'errors-only',
+      // noInfo: true
+    },
+    coverageReporter: {
+      reporters: [
+        {type: 'text'},
+        {type: 'html', dir: 'coverage/'},
+      ]
     },
     client: {
       clearContext: false,
@@ -137,7 +154,7 @@ module.exports = function (config) {
     mime: {
       'text/x-typescript': ['ts', 'tsx',],
     },
-    reporters: ['progress', 'kjhtml',],
+    reporters: ['progress', 'kjhtml', 'coverage', ],
     port: 3001,
     colors: true,
     logLevel: config.LOG_INFO,

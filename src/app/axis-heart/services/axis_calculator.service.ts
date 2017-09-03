@@ -31,7 +31,6 @@ export interface axisCalculatorParams {
 
 @Injectable ()
 export class AxisCalculator {
-  private static _instance: AxisCalculator;
   readonly settings: axisCalculatorParams;
 
   accuracy: number;
@@ -49,12 +48,6 @@ export class AxisCalculator {
     this.accuracy = settings.accuracy.default;
     this.maxSum = settings.maxSum.default;
     this.maxWave = settings.maxWave.default;
-
-    if (!AxisCalculator._instance) {
-      AxisCalculator._instance = this;
-    }
-
-    return AxisCalculator._instance;
   }
 
   setAccuracy (accuracy: number): AxisCalculator {
@@ -83,12 +76,7 @@ export class AxisCalculator {
     let alfa: number = Math.atan (tanAlfa) * 180 / Math.PI;
 
     if (sumI < 0) {
-      if (alfa <= 0) {
-        alfa = alfa + 180;
-      }
-      else {
-        alfa = alfa - 180;
-      }
+      alfa = alfa + 180;
     }
 
     return Number (alfa.toFixed(this.accuracy));

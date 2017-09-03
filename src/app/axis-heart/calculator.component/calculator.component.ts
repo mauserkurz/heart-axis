@@ -170,19 +170,14 @@ export class CalculatorComponent implements OnInit, OnDestroy {
       this.formInvalid = true;
       this.outputValue = 'ERROR';
     } else {
-      try {
-        let result: number = this.getValue();
+      let result: number = this.getValue();
 
-        this.formInvalid = isNaN(result);
-        if (isNaN(result)) {
-          this.outputValue = 'ERROR';
-        }
-
-        this.outputValue = `${result}°`;
-      } catch (error) {
-        this.formInvalid = true;
+      this.formInvalid = isNaN(result);
+      if (isNaN(result)) {
         this.outputValue = 'ERROR';
       }
+
+      this.outputValue = `${result}°`;
     }
   }
 

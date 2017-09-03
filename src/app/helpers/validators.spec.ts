@@ -1,5 +1,6 @@
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
-import { checkMinimum, checkMaximum, verifyNum, allValuesNotZero, sumOfValuesNotZero } from './validators';
+import { Range } from "../qtc/services/qtc.service";
+import { checkMinimum, checkMaximum, verifyNum, allValuesNotZero, sumOfValuesNotZero, noSuchBorders } from './validators';
 
 describe ('Validators', () => {
   const minimum: number = 10;
@@ -100,6 +101,42 @@ describe ('Validators', () => {
     it ('no return error when some sum of control is not zero', () => {
       form.controls['r1'].setValue (2);
       expect (sumOfValuesNotZero (['r1', 'qs1'], ['r3', 'qs3'])(form)).toEqual (undefined); 
+    });
+  });
+
+  describe('noSuchBorders', () => {
+    let range: Range;
+
+    beforeEach (() => {
+      range = new Range (
+        [
+          {
+            border: 430,
+            name: 'Норма',
+            colorClass: 'info',
+          },
+          {
+            border: 450,
+            name: 'Пограничное',
+            colorClass: 'warning',
+          },
+        ],
+        100,
+        1000,
+        'Удлинение',
+        'danger',
+        0
+      );
+    });
+
+    it ('should return error when exist object which describe border with same value', () => {
+      control.setValue(430);
+      expect (noSuchBorders(range)(control)).toEqual ({ borderExist: true });
+    });
+
+    it ('no return error when no such border', () => {
+      control.setValue(400);
+      expect (noSuchBorders(range)(control)).toEqual (undefined);
     });
   });
 });
