@@ -2,56 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a8acf54-f245-4559-afa9-886c3451aedc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e2e/app.e2e-spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e2e/app.po.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protractor.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.test.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/helpers/jqHelper.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc.component/qtc.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc.component/qtc.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc.component/qtc.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc_settings.component/qtc_settings.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc_settings.component/qtc_settings.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/qtc_settings.component/qtc_settings.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/services/qtc.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/qtc/services/qtc.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/services/animations.spec.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/assets/images/load.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/2bca6e0734d64411260a735f649d74df.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/8c67d5cbbc1c9cd3b286f6ae1737ab78.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/app.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/vendor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/vendor.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.todo-list.json" afterPath="$PROJECT_DIR$/.todo-list.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.html" afterPath="$PROJECT_DIR$/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.scss" afterPath="$PROJECT_DIR$/src/app/app.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.routes.ts" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/axis_settings.component/axis_settings.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/calculator.component/calculator.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/index.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/axis-heart/services/axis_calculator.service.ts" afterPath="$PROJECT_DIR$/src/app/axis-heart/services/axis_calculator.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html" afterPath="$PROJECT_DIR$/src/app/common/faq_list.component/faq_list.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/index.component/index.component.html" afterPath="$PROJECT_DIR$/src/app/common/index.component/index.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/index.component/index.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/common/index.component/index.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/helpers/jqHelper.ts" afterPath="$PROJECT_DIR$/src/app/helpers/jqHelper.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/helpers/validators.spec.ts" afterPath="$PROJECT_DIR$/src/app/helpers/validators.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/helpers/validators.ts" afterPath="$PROJECT_DIR$/src/app/helpers/validators.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/arrhythmia_settings.component/arrhythmia_settings.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" afterPath="$PROJECT_DIR$/src/app/is-arrhythmia/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/services/app_state.service.ts" afterPath="$PROJECT_DIR$/src/app/services/app_state.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/btn_plus.component/btn_plus.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/settings_field.component/settings_field.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/sum_field.component/sum_field.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -167,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/e2e/app.e2e-spec.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -379,7 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -435,12 +392,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e2e" />
+              <option name="myItemId" value="dev" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -562,19 +520,19 @@
       <workItem from="1504315769401" duration="36321000" />
       <workItem from="1504401343684" duration="19135000" />
       <workItem from="1504421410612" duration="22937000" />
-      <workItem from="1504449627592" duration="52000" />
+      <workItem from="1504449627592" duration="175000" />
+      <workItem from="1504451135484" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338883000" />
+    <option name="totallyTimeSpent" value="339029000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3187679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32378224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -956,7 +914,7 @@
     <entry file="file://$PROJECT_DIR$/e2e/app.e2e-spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -988,7 +946,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
