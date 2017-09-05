@@ -13,6 +13,7 @@
     "target": "es6",
     "types":[
      "jasmine",
+     "jasminewd2",
      "node"
     ],
     "typeRoots": [

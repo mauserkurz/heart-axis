@@ -19,6 +19,13 @@
 
 // npm run prod - компиляция файлов в production, где бандлы минифицированны
 
+// npm run e2e - запуск end to end тестов с использованием protractor и jasmine
+// - перед запуском в 1-й раз поссле npm install и $(npm bin)/typings install запсутить обновление селениума:
+// $(npm bin)/webdriver-manager update
+// - перед каждым запуском команда: npm run serve - для доступа к запущенному приложению
+
+// npm run test - запуск всех юнит тестов с использованием karma и jasmine
+
 
 
 // Errors
@@ -128,6 +135,10 @@ module.exports = {
           'angular-router-loader',
           // angular2-template-loader - лоадер загружат модулями файлы шаблонов и стилей из templateUrl, styleUrls компонентов
           'angular2-template-loader'
+        ],
+        exclude: [
+          /\.spec\.ts$/,
+          './e2e/'
         ],
       },
       {

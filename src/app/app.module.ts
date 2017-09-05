@@ -1,5 +1,5 @@
 // angular
-import { NgModule } from '@angular/core';
+import { enableProdMode, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from "@angular/common";
@@ -45,4 +45,5 @@ import { QTcModule } from "./qtc/index";
 
 export class AppModule {}
 
+enableProdMode(); // enable production state
 platformBrowserDynamic().bootstrapModule(AppModule).catch((err: any) => console.error(err));

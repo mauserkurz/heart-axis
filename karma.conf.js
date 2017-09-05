@@ -12,7 +12,7 @@ const configFiles = {
       // путь до html файлов
       html: './src/index.html',
       // путь до typescript файлов
-      ts: './src/app.module.ts',
+      ts: './src/app/app.module.ts',
     },
   },
 };
@@ -20,12 +20,12 @@ const configFiles = {
 module.exports = function (config) {
   config.set({
     autoWatchBatchDelay: 1000,
-    browserNoActivityTimeout: 2000,
+    browserNoActivityTimeout: 12000,
     browsers: ['Chrome'/*, 'Firefox', 'IE', 'Opera'*/],
     singleRun: false,
     concurrency: Infinity,
-    basePath: './',
-    frameworks: ['jasmine-jquery', 'jasmine',],
+    basePath: '.',
+    frameworks: ['jasmine-jquery', 'jasmine'],
     plugins: [
       require('karma-jasmine-jquery'),
       require('karma-jasmine'),
@@ -36,7 +36,7 @@ module.exports = function (config) {
       require('karma-coverage'),
     ],
     preprocessors: {
-      'test.bundle.js': [ 'webpack', 'sourcemap' ]
+      'karma.bundle.js': [ 'webpack', 'sourcemap' ],
     },
     webpack: {
       devtool: 'inline-source-map',
@@ -88,7 +88,9 @@ module.exports = function (config) {
               'awesome-typescript-loader',
               'angular2-template-loader',
             ],
-            exclude: /\.spec\.ts$/
+            exclude: [
+              /\.spec\.ts$/,
+            ],
           },
           {
             test: /\.spec\.ts$/,
@@ -133,14 +135,11 @@ module.exports = function (config) {
     },
     webpackMiddleware: {
       // webpack-dev-middleware configuration
-      stats: 'errors-only',
-      // noInfo: true
+      noInfo: true
     },
     coverageReporter: {
-      reporters: [
-        {type: 'text'},
-        {type: 'html', dir: 'coverage/'},
-      ]
+      type: 'text',
+      includeAllSources: true,
     },
     client: {
       clearContext: false,
@@ -149,12 +148,12 @@ module.exports = function (config) {
       'https://code.jquery.com/jquery-3.2.1.slim.min.js',
       'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js',
       'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',
-      { pattern: 'test.bundle.js', watched: false, },
+      { pattern: 'karma.bundle.js', watched: false, },
     ],
     mime: {
       'text/x-typescript': ['ts', 'tsx',],
     },
-    reporters: ['progress', 'kjhtml', 'coverage', ],
+    reporters: [ 'progress', 'kjhtml', 'coverage' ],
     port: 3001,
     colors: true,
     logLevel: config.LOG_INFO,

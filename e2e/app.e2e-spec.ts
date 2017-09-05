@@ -7,8 +7,8 @@ describe('App', () => {
     page = new MainPage();
   });
 
-  it('should find text', () => {
+  it('should find text of main title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toBeTruthy();
+    expect(page.getParagraphText()).toEqual('Добро пожаловать в ФД-формула.');
   });
 });
