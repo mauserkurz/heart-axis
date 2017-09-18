@@ -19,7 +19,7 @@ import { fadeIn } from "./services/animations";
 
 export class AppComponent {
   wrapperIsActive: boolean = false;
-  matchUrls: string[] = ['/heart-axis', '/is-arrhythmia', '/qtc'];
+  matchUrls: string[] = ['/heart-axis', '/is-arrhythmia', '/qtc', ];
   @HostBinding('class.container') container: boolean = true;
 
   constructor (public router: Router) {

@@ -76,7 +76,12 @@ export class AxisCalculator {
     let alfa: number = Math.atan (tanAlfa) * 180 / Math.PI;
 
     if (sumI < 0) {
-      alfa = alfa + 180;
+      if (alfa <= 0) {
+        alfa = alfa + 180;
+      }
+      else {
+        alfa = alfa - 180;
+      }
     }
 
     return Number (alfa.toFixed(this.accuracy));

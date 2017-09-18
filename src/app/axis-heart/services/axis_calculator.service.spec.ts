@@ -62,6 +62,9 @@ describe ('AxisCalculator', () => {
     it ('counting positive SumI and positive SumIII', () => {
       expect (service.countAngle (1, 1)).toEqual (60);
     });
+    it ('counting negative SumI and negative SumIII', () => {
+      expect (service.countAngle (-1, -1)).toEqual (-120);
+    });
     it ('return Nan when 0 SumI and 0 SumIII', () => {
       expect (service.countAngle (0, 0)).toEqual (NaN);
     });

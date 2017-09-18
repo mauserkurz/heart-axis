@@ -19,7 +19,6 @@ const configFiles = {
 
 module.exports = function (config) {
   config.set({
-    autoWatchBatchDelay: 1000,
     browserNoActivityTimeout: 12000,
     browsers: ['Chrome'/*, 'Firefox', 'IE', 'Opera'*/],
     singleRun: false,
@@ -36,7 +35,7 @@ module.exports = function (config) {
       require('karma-coverage'),
     ],
     preprocessors: {
-      'karma.bundle.js': [ 'webpack', 'sourcemap' ],
+      'test.bundle.js': [ 'webpack', 'sourcemap' ],
     },
     webpack: {
       devtool: 'inline-source-map',
@@ -148,7 +147,7 @@ module.exports = function (config) {
       'https://code.jquery.com/jquery-3.2.1.slim.min.js',
       'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js',
       'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',
-      { pattern: 'karma.bundle.js', watched: false, },
+      { pattern: 'test.bundle.js', watched: false, included: true, },
     ],
     mime: {
       'text/x-typescript': ['ts', 'tsx',],

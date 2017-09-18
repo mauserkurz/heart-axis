@@ -123,15 +123,6 @@ export class CalculatorComponent implements OnInit, OnDestroy {
     });
 
     this.useSums = this.state.getValue ('useSums').use;
-
-    this.state.getStream ('useSums').subscribe ((value) => {
-      this.useSums = value.use;
-      if (this.useSums) {
-        this.resetWaves ();
-      } else {
-        this.resetSums ();
-      }
-    });
   }
 
   ngOnInit (): void {
