@@ -20,7 +20,7 @@ const configFiles = {
 module.exports = function (config) {
   config.set({
     browserNoActivityTimeout: 12000,
-    browsers: ['Chrome'/*, 'Firefox', 'IE', 'Opera'*/],
+    browsers: ['Chrome', /*'IE', 'Firefox', 'Opera'*/],
     singleRun: false,
     concurrency: Infinity,
     basePath: '.',
@@ -31,6 +31,7 @@ module.exports = function (config) {
       require('karma-webpack'),
       require('karma-sourcemap-loader'),
       require('karma-chrome-launcher'),
+      require('karma-ie-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
     ],

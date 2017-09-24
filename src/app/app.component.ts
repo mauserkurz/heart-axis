@@ -1,5 +1,5 @@
 // angular
-import { Component, HostBinding, Input, ViewEncapsulation, } from "@angular/core";
+import { Component, HostBinding, ViewEncapsulation, } from "@angular/core";
 import { NavigationStart, Router } from "@angular/router";
 // services
 import { fadeIn } from "./services/animations";

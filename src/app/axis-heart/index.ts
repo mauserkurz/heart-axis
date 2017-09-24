@@ -11,7 +11,7 @@ import { CalculatorComponent } from "./calculator.component/calculator.component
 import { AxisSettingsComponent } from "./axis_settings.component/axis_settings.component";
 import { SharedModule } from "../shared/";
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'settings', component: AxisSettingsComponent },
@@ -59,7 +59,7 @@ export const routes: Routes = [
     },
   ],
   imports: [
-    RouterModule,
+    RouterModule.forChild(routes),
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -67,4 +67,4 @@ export const routes: Routes = [
   ],
 })
 
-export class AxisHeartModule {}
+export default class AxisHeartModule {}

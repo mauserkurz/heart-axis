@@ -14,10 +14,6 @@ import { CalcWrapperComponent } from "./common/calc_wrapper.component/calc_wrapp
 import { NotFoundComponent } from "./common/not_found.component/not_found.component";
 import { IndexComponent } from './common/index.component/index.component';
 import { FAQListComponent } from './common/faq_list.component/faq_list.component';
-// nested modules
-import { AxisHeartModule } from "./axis-heart/index";
-import { IsArrhythmiaModule } from "./is-arrhythmia/index";
-import { QTcModule } from "./qtc/index";
 
 @NgModule({
   declarations: [
@@ -29,9 +25,6 @@ import { QTcModule } from "./qtc/index";
   ],
   imports: [
     BrowserModule,
-    AxisHeartModule,
-    IsArrhythmiaModule,
-    QTcModule,
     RouterModule.forRoot(routes, { useHash: true }),
     BrowserAnimationsModule,
   ],

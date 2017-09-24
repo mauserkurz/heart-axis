@@ -11,7 +11,7 @@ import { QTcComponent } from "./qtc.component/qtc.component";
 import { QTcSettingsComponent } from "./qtc_settings.component/qtc_settings.component";
 import { SharedModule } from "../shared/";
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: QTcComponent },
   { path: 'settings', component: QTcSettingsComponent },
@@ -85,7 +85,7 @@ export const routes: Routes = [
     },
   ],
   imports: [
-    RouterModule,
+    RouterModule.forChild(routes),
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -93,4 +93,4 @@ export const routes: Routes = [
   ],
 })
 
-export class QTcModule {}
+export default class QTcModule {}

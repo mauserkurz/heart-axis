@@ -11,7 +11,7 @@ import { ArrhythmiaComponent } from "./arrhythmia.component/arrhythmia.component
 import { ArrhythmiaSettingsComponent } from "./arrhythmia_settings.component/arrhythmia_settings.component";
 import { SharedModule } from "../shared/";
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'calculator', pathMatch: 'full' },
   { path: 'calculator', component: ArrhythmiaComponent },
   { path: 'settings', component: ArrhythmiaSettingsComponent },
@@ -55,7 +55,7 @@ export const routes: Routes = [
     },
   ],
   imports: [
-    RouterModule,
+    RouterModule.forChild(routes),
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -63,4 +63,4 @@ export const routes: Routes = [
   ],
 })
 
-export class IsArrhythmiaModule {}
+export default class IsArrhythmiaModule {}

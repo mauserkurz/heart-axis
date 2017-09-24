@@ -232,6 +232,8 @@ module.exports = {
   devtool: isProduction ? 'source-map' : 'eval-source-map',
   // настройка webpack-dev-server
   devServer: {
+    // внешний ip - 0.0.0.0:8080
+    host: '192.168.1.143',
     // папка, которая будет корнем проекта
     publicPath: "/",
     // папка, которая будет корнем для сервера

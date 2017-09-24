@@ -65,8 +65,10 @@
     "@angular/platform-browser": "^4.1.2",
     "@angular/platform-browser-dynamic": "^4.1.2",
     "@angular/router": "^4.2.6",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
     "rxjs": "^6.0.0-alpha.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.10"
   },
   "repository": {

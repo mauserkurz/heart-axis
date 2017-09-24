@@ -5,10 +5,6 @@ import { NotFoundComponent } from "./common/not_found.component/not_found.compon
 import { CalcWrapperComponent } from './common/calc_wrapper.component/calc_wrapper.component';
 import { IndexComponent } from './common/index.component/index.component';
 import { FAQListComponent } from './common/faq_list.component/faq_list.component';
-// child routes
-import { routes as heartAxisRoutes } from './axis-heart';
-import { routes as arrhythmiaRoutes } from './is-arrhythmia';
-import { routes as qtcRoutes } from './qtc';
 
 export const routes: Routes = [
   {
@@ -18,17 +14,17 @@ export const routes: Routes = [
   {
     path: 'heart-axis',
     component: CalcWrapperComponent,
-    children: heartAxisRoutes,
+    loadChildren: './axis-heart',
   },
   {
     path: 'is-arrhythmia',
     component: CalcWrapperComponent,
-    children: arrhythmiaRoutes,
+    loadChildren: './is-arrhythmia',
   },
   {
     path: 'qtc',
     component: CalcWrapperComponent,
-    children: qtcRoutes,
+    loadChildren: './qtc',
   },
   {
     path: 'faq-list',
