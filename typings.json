@@ -1,6 +1,10 @@
 {
   "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160726204056",
     "core-js": "registry:dt/core-js#0.9.0+20170324193834",
+    "jasmine": "registry:dt/jasmine#2.5.2+20170317130948",
+    "jasminewd2": "registry:dt/jasminewd2#2.0.0+20170315065549",
+    "jquery": "registry:dt/jquery#1.10.0+20170310222111",
     "node": "registry:dt/node#7.0.0+20170322231424"
   }
 }
