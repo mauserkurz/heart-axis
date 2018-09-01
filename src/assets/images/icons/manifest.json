@@ -1,0 +1,10 @@
+{
+    "name": "ФД-формула",
+    "short_name": "ФД-формула",
+    "start_url": ".",
+    "description": "Приложение содержащее медицинские калькуляторы",
+    "icons": [],
+    "theme_color": "#007bff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

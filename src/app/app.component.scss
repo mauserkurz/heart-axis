@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    overflow: hidden;
+}
+
+.footer {
+    &__content {
+        padding: 0 1rem 1rem;
+    }
+}
